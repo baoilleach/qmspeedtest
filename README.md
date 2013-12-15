@@ -6,8 +6,13 @@ Quantum Chemistry speed test
 HF
 --
 <table>
-<tr><td>1</td><td>2</td></tr>
+<tr>
+<th>QM Package</th><th>Time (min)</th><th>Steps</th><th>per step</th>
+<th>Total E</th><th>HOMO</th><th>LUMO</th>
+</tr>
+<tr>
+<td>erkale</td><td>810</td>
+<td>90</td><td>9</td>
+<td>-644.67570139</td><td>0.074269</td><td>-0.353712</td>
+</tr>
 </table>
-
-| QM Package | Time (min) | Steps | per step | Total E | HOMO | LUMO |
-| erkale | 810 | 90 | 9 | -644.67570139 | 0.074269 | -0.353712 |
