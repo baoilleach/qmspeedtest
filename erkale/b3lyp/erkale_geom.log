@@ -1,0 +1,1365 @@
+Basis set 6-31G found in file 6-31G.gbs in ../../build/erkale/basis/.
+
+Using the BFGS2 minimizer.
+
+Current Settings used by ERKALE:
+     AtomGuess      	                Auto	Method used for atomic guess (Auto for same as method)
+     Basis          	               6-31G	Basis set used in calculation
+     BasisOrth      	                Auto	Method of orthonormalization of basis set
+     C1-DIIS        	               false	Use older version of DIIS (C1-DIIS instead of C2-DIIS)?
+     Charge         	                   0	Total charge of system
+     Criterion      	              NORMAL	Convergence criterion to use: LOOSE, NORMAL, TIGHT, VERYTIGHT
+     DFTDelta       	           5.000e+03	Switch to final DFT grid, relative to deltaE and deltaP
+     DFTDirect      	               false	Save memory by not storing values of basis functions in memory
+     DFTFinalTol    	           1.000e-05	Tolerance of final DFT grid
+     DFTGrid        	                Auto	DFT integration grid to use: nrad lmax or Auto for adaptive
+     DFTInitialTol  	           1.000e-04	Tolerance of initial DFT grid
+     DFTLobatto     	               false	Use Lobatto quadrature instead of Lebedev quadrature?
+     DIISOrder      	                  10	How many DIIS iterations to keep in memory?
+     DIISThr        	           5.000e-02	DIIS error threshold for DIIS updates
+     DecFock        	               false	Use decontracted basis to calculate Fock matrix (direct HF)
+     Decontract     	                    	Indices of atoms to decontract basis set for
+     DeltaEmax      	           1.000e-06	Maximum allowed change of energy
+     DeltaPmax      	           1.000e-06	Maximum allowed maximum difference of density matrix
+     DeltaPrms      	           1.000e-08	Maximum allowed RMS difference of density matrix
+     DensityFitting 	               false	Use density fitting / RI?
+     Direct         	               false	Calculate two-electron integrals (or density fitting) on-the-fly?
+     FittingBasis   	                Auto	Basis to use for density fitting / RI (Auto for automatic)
+     FittingMemory  	                1000	Amount of memory in MB to use for exchange fitting
+     FittingThreshold	           1.000e-08	Linear dependence threshold for Coulomb integrals in density fitting
+     ForcePol       	               false	Force polarized calculation
+     FreezeCore     	               false	Freeze the atomic cores?
+     Guess          	              Atomic	Used guess: atomic (default), molecular, or core
+     LineSearch     	               false	Do line search in level shift (EXPENSIVE!)
+     LoadChk        	                    	File to load old results from
+     Logfile        	     erkale_geom.log	File to print out full information, stdout for screen
+     MaxIter        	                 100	Maximum number of iterations in SCF cycle
+     MaxSteps       	                 256	Maximum amount of geometry steps
+     Method         	    hyb_gga_xc_b3lyp	Method used in calculation (HF or a DFT functional)
+     Multiplicity   	                   1	Spin multiplicity
+     Occupancies    	                    	Orbital occupancies
+     OptMovie       	        optimize.xyz	xyz movie to store progress in
+     Optimizer      	               BFGS2	Optimizer to use: CGFR, CGPR, BFGS, BFGS2 (default), SD
+     PZ-SIC         	                  No	Perform Perdew-Zunger self-interaction correction? No, Pert, Full, Can, CanPert
+     PZ-SICloc      	                true	Use Foster-Boys localized orbitals to initialize SIC?
+     PZ-SICmode     	              CoulXC	Mode to use PZ-SIC in. Coul, CoulX, CoulC, CoulXC
+     PZ-SICw        	           1.000e+00	Weight for Perdew-Zunger self-interaction correction
+     Result         	       optimized.xyz	File to save optimized geometry in
+     SaveChk        	          erkale.chk	File to use as checkpoint
+     Shift          	           0.000e+00	Level shift to use in Hartree
+     StrictIntegrals	               false	Use strict integrals?
+     System         	           atoms.xyz	System as an xyz file
+     UseADIIS       	                true	Use ADIIS for Fock matrix interpolation? (DIIS takes preference)
+     UseBroyden     	               false	Use Broyden mixing of Fock matrices?
+     UseDIIS        	                true	Use Pulay's Direct Inversion in the Iterative Subspace?
+     UseLM          	                true	Use a spherical harmonics basis set by default?
+     UseTRDSM       	               false	Use Trust-Region DSM?
+     UseTRRH        	               false	Use Trust-Region Roothaan-Hall?
+     Verbose        	                true	Verbose calculation?
+
+Performing atomic guess for atoms:
+	1 2 3 4 5 6 7 11 12 Occupancies
+alpha	1.00 1.00 0.67 0.67 0.67 
+beta	1.00 1.00 0.00 0.00 0.00 
+ (0.09 s)
+	8 9 10 13 Occupancies
+alpha	1.00 1.00 1.00 1.00 1.00 
+beta	1.00 1.00 0.33 0.33 0.33 
+ (0.05 s)
+	14 15 16 17 18 19 20 21 Occupancies
+alpha	1.00 
+beta	0.00 
+ (0.02 s)
+Diagonalizing density matrix ... done (0.02 s)
+Atomic guess formed in 0.17 s.
+
+There are 81 shells and 21 nuclei in the basis set.
+
+List of nuclei, geometry in Ångström with three decimal places:
+		 Z	    x	    y	    z
+1	C	 6	  2.056	 -0.165	  0.397
+2	C	 6	  0.689	  2.029	 -0.648
+3	C	 6	  2.741	  1.023	  0.125
+4	C	 6	  2.057	  2.118	 -0.400
+5	C	 6	 -3.594	  1.032	  0.046
+6	C	 6	  0.677	 -0.275	  0.151
+7	C	 6	  0.003	  0.842	 -0.359
+8	O	 8	  0.633	 -2.545	  0.934
+9	O	 8	 -1.765	  1.433	  1.566
+10	O	 8	 -1.249	 -1.684	  0.130
+11	C	 6	  0.053	 -1.589	  0.450
+12	C	 6	 -2.152	  1.128	  0.445
+13	O	 8	 -1.362	  0.828	 -0.658
+14	H	 1	 -1.477	 -2.601	  0.392
+15	H	 1	  2.609	 -1.012	  0.803
+16	H	 1	  0.157	  2.883	 -1.058
+17	H	 1	  3.808	  1.091	  0.324
+18	H	 1	  2.590	  3.041	 -0.614
+19	H	 1	 -3.816	  0.020	 -0.303
+20	H	 1	 -4.225	  1.246	  0.914
+21	H	 1	 -3.813	  1.766	 -0.733
+
+List of basis functions:
+Shell    1	S cart shell at nucleus   1 with with basis functions    1-1   
+Shell    2	S cart shell at nucleus   1 with with basis functions    2-2   
+Shell    3	S cart shell at nucleus   1 with with basis functions    3-3   
+Shell    4	P cart shell at nucleus   1 with with basis functions    4-6   
+Shell    5	P cart shell at nucleus   1 with with basis functions    7-9   
+Shell    6	S cart shell at nucleus   2 with with basis functions   10-10  
+Shell    7	S cart shell at nucleus   2 with with basis functions   11-11  
+Shell    8	S cart shell at nucleus   2 with with basis functions   12-12  
+Shell    9	P cart shell at nucleus   2 with with basis functions   13-15  
+Shell   10	P cart shell at nucleus   2 with with basis functions   16-18  
+Shell   11	S cart shell at nucleus   3 with with basis functions   19-19  
+Shell   12	S cart shell at nucleus   3 with with basis functions   20-20  
+Shell   13	S cart shell at nucleus   3 with with basis functions   21-21  
+Shell   14	P cart shell at nucleus   3 with with basis functions   22-24  
+Shell   15	P cart shell at nucleus   3 with with basis functions   25-27  
+Shell   16	S cart shell at nucleus   4 with with basis functions   28-28  
+Shell   17	S cart shell at nucleus   4 with with basis functions   29-29  
+Shell   18	S cart shell at nucleus   4 with with basis functions   30-30  
+Shell   19	P cart shell at nucleus   4 with with basis functions   31-33  
+Shell   20	P cart shell at nucleus   4 with with basis functions   34-36  
+Shell   21	S cart shell at nucleus   5 with with basis functions   37-37  
+Shell   22	S cart shell at nucleus   5 with with basis functions   38-38  
+Shell   23	S cart shell at nucleus   5 with with basis functions   39-39  
+Shell   24	P cart shell at nucleus   5 with with basis functions   40-42  
+Shell   25	P cart shell at nucleus   5 with with basis functions   43-45  
+Shell   26	S cart shell at nucleus   6 with with basis functions   46-46  
+Shell   27	S cart shell at nucleus   6 with with basis functions   47-47  
+Shell   28	S cart shell at nucleus   6 with with basis functions   48-48  
+Shell   29	P cart shell at nucleus   6 with with basis functions   49-51  
+Shell   30	P cart shell at nucleus   6 with with basis functions   52-54  
+Shell   31	S cart shell at nucleus   7 with with basis functions   55-55  
+Shell   32	S cart shell at nucleus   7 with with basis functions   56-56  
+Shell   33	S cart shell at nucleus   7 with with basis functions   57-57  
+Shell   34	P cart shell at nucleus   7 with with basis functions   58-60  
+Shell   35	P cart shell at nucleus   7 with with basis functions   61-63  
+Shell   36	S cart shell at nucleus   8 with with basis functions   64-64  
+Shell   37	S cart shell at nucleus   8 with with basis functions   65-65  
+Shell   38	S cart shell at nucleus   8 with with basis functions   66-66  
+Shell   39	P cart shell at nucleus   8 with with basis functions   67-69  
+Shell   40	P cart shell at nucleus   8 with with basis functions   70-72  
+Shell   41	S cart shell at nucleus   9 with with basis functions   73-73  
+Shell   42	S cart shell at nucleus   9 with with basis functions   74-74  
+Shell   43	S cart shell at nucleus   9 with with basis functions   75-75  
+Shell   44	P cart shell at nucleus   9 with with basis functions   76-78  
+Shell   45	P cart shell at nucleus   9 with with basis functions   79-81  
+Shell   46	S cart shell at nucleus  10 with with basis functions   82-82  
+Shell   47	S cart shell at nucleus  10 with with basis functions   83-83  
+Shell   48	S cart shell at nucleus  10 with with basis functions   84-84  
+Shell   49	P cart shell at nucleus  10 with with basis functions   85-87  
+Shell   50	P cart shell at nucleus  10 with with basis functions   88-90  
+Shell   51	S cart shell at nucleus  11 with with basis functions   91-91  
+Shell   52	S cart shell at nucleus  11 with with basis functions   92-92  
+Shell   53	S cart shell at nucleus  11 with with basis functions   93-93  
+Shell   54	P cart shell at nucleus  11 with with basis functions   94-96  
+Shell   55	P cart shell at nucleus  11 with with basis functions   97-99  
+Shell   56	S cart shell at nucleus  12 with with basis functions  100-100 
+Shell   57	S cart shell at nucleus  12 with with basis functions  101-101 
+Shell   58	S cart shell at nucleus  12 with with basis functions  102-102 
+Shell   59	P cart shell at nucleus  12 with with basis functions  103-105 
+Shell   60	P cart shell at nucleus  12 with with basis functions  106-108 
+Shell   61	S cart shell at nucleus  13 with with basis functions  109-109 
+Shell   62	S cart shell at nucleus  13 with with basis functions  110-110 
+Shell   63	S cart shell at nucleus  13 with with basis functions  111-111 
+Shell   64	P cart shell at nucleus  13 with with basis functions  112-114 
+Shell   65	P cart shell at nucleus  13 with with basis functions  115-117 
+Shell   66	S cart shell at nucleus  14 with with basis functions  118-118 
+Shell   67	S cart shell at nucleus  14 with with basis functions  119-119 
+Shell   68	S cart shell at nucleus  15 with with basis functions  120-120 
+Shell   69	S cart shell at nucleus  15 with with basis functions  121-121 
+Shell   70	S cart shell at nucleus  16 with with basis functions  122-122 
+Shell   71	S cart shell at nucleus  16 with with basis functions  123-123 
+Shell   72	S cart shell at nucleus  17 with with basis functions  124-124 
+Shell   73	S cart shell at nucleus  17 with with basis functions  125-125 
+Shell   74	S cart shell at nucleus  18 with with basis functions  126-126 
+Shell   75	S cart shell at nucleus  18 with with basis functions  127-127 
+Shell   76	S cart shell at nucleus  19 with with basis functions  128-128 
+Shell   77	S cart shell at nucleus  19 with with basis functions  129-129 
+Shell   78	S cart shell at nucleus  20 with with basis functions  130-130 
+Shell   79	S cart shell at nucleus  20 with with basis functions  131-131 
+Shell   80	S cart shell at nucleus  21 with with basis functions  132-132 
+Shell   81	S cart shell at nucleus  21 with with basis functions  133-133 
+
+Basis set contains 133 functions, maximum angular momentum is 1.
+Spherical harmonic Gaussians are used by default, there are 133 cartesians.
+
+Forming overlap matrix ... done (0.01 s)
+Forming kinetic energy matrix ... done (0.03 s)
+Forming nuclear attraction matrix ... done (0.22 s)
+
+Smallest eigenvalue of overlap matrix is 5.37e-04, ratio to largest is 9.56e-05.
+Using symmetric orthogonalization.
+Basis set diagonalized in 0.01 s.
+
+Forming table of 317659328 ERIs, requiring 302 Mi 966 ki of memory ... done (1 min 23.88 s)
+
+Initialization of computation done in 1 min 24.15 s.
+
+Used exchange-correlation functional is hyb_gga_xc_b3lyp, 'B3LYP', defined in the reference(s):
+PJ Stephens, FJ Devlin, CF Chabalowski, MJ Frisch, J. Phys. Chem. 98 11623 (1994)
+
+ ******* Initialization of run ********
+
+Using input guess for orbitals.
+HOMO-LUMO gap is    0.00 eV. Energies of lowest lying states:
+   -19.297535*   -19.297535*   -19.297535*   -19.297535*   -10.312255*
+   -10.312255*   -10.312255*   -10.312255*   -10.312255*   -10.312255*
+   -10.312255*   -10.312255*   -10.312255*    -1.012664*    -1.012664*
+    -1.012664*    -1.012664*    -0.585943*    -0.585943*    -0.585943*
+    -0.585943*    -0.585943*    -0.585943*    -0.585943*    -0.585943*
+    -0.585943*    -0.428242*    -0.428242*    -0.428242*    -0.428242*
+    -0.428242*    -0.428242*    -0.428242*    -0.428242*    -0.428242*
+    -0.428242*    -0.428242*    -0.428242*    -0.316167*    -0.316167*
+    -0.316167*    -0.316167*    -0.316167*    -0.316167*    -0.316167*
+    -0.316167*    -0.222997*    -0.222997     -0.222997     -0.222997 
+    -0.222997     -0.222997     -0.222997     -0.222997     -0.222997 
+
+Orbital occupancies:
+2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 
+2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 
+2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 
+2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 
+
+Using hybrid exchange with  20.000 of exact exchange.
+Constructing DFT grid.
+	atom  Npoints      Nfuncs  t
+	   1     3040      256741  0.75 s
+	   2     2920      253375  0.74 s
+	   3     2968      225574  0.63 s
+	   4     3016      231019  0.65 s
+	   5     2712      185127  0.50 s
+	   6     3040      288450  0.91 s
+	   7     3052      293075  0.92 s
+	   8     2748      204810  0.53 s
+	   9     2496      206148  0.52 s
+	  10     3024      253959  0.73 s
+	  11     2956      258508  0.75 s
+	  12     2936      255818  0.76 s
+	  13     2652      245405  0.70 s
+	  14     2170      154833  0.37 s
+	  15     2370      172296  0.45 s
+	  16     2082      157572  0.38 s
+	  17     2082      122294  0.27 s
+	  18     2226      135325  0.33 s
+	  19     2274      143731  0.36 s
+	  20     2094      118103  0.26 s
+	  21     2058      122633  0.28 s
+DFT XC grid constructed in 11.77 s.
+
+ ******* Iteration    1 ********
+Forming HF Coulomb and exchange matrices ... done (3.02 s)
+Computing DFT exchange and correlation ... done (4.62 s)
+Numerically integrated density is 94.00020 (+0.0002 %).
+
+DIIS error too large, not using DIIS extrapolation.
+Performing ADIIS interpolation of Fock operator ... done (0.00 s)
+
+Solving SCF equations ... done (0.01 s)
+HOMO-LUMO gap is    1.15 eV. Energies of lowest lying states:
+   -19.018199*   -18.873806*   -18.637553*   -18.543344*   -11.031879*
+   -10.951611*   -10.844502*   -10.821318*   -10.779447*   -10.705728*
+   -10.700411*   -10.675889*   -10.642181*    -1.296432*    -1.254714*
+    -1.230382*    -1.146317*    -1.136817*    -1.075803*    -1.066357*
+    -1.041372*    -0.982429*    -0.948849*    -0.897465*    -0.844412*
+    -0.832051*    -0.774521*    -0.745537*    -0.738628*    -0.720288*
+    -0.698972*    -0.679524*    -0.668723*    -0.641559*    -0.627621*
+    -0.617949*    -0.577806*    -0.569202*    -0.531192*    -0.424079*
+    -0.413280*    -0.329464*    -0.309707*    -0.296729*    -0.283674*
+    -0.270015*    -0.249446*    -0.207023     -0.178974     -0.159977 
+    -0.101751     -0.068117     -0.049741     -0.045252     -0.034818 
+
+Dipole:	x		y		z		dipole change
+	-12.07089768	-13.50532855	 12.16435132	 2.181907e+01
+Energy:	electronic	total		virial		energy change
+	-1428.15878635	-645.49761072	 0.99585153	-645.498
+	kinetic		nuclear		Coulomb		XC
+	 648.18659175	-3066.63683085	 1076.12934322	-85.83789047
+Errors:	Max dens	RMS dens	DIIS
+	 1.253551e+00	 7.324791e-02	 6.009903e-01
+
+Iteration took 7.70 s.
+
+ ******* Iteration    2 ********
+Forming HF Coulomb and exchange matrices ... done (3.02 s)
+Computing DFT exchange and correlation ... done (4.60 s)
+Numerically integrated density is 94.00010 (+0.0001 %).
+
+DIIS error too large, not using DIIS extrapolation.
+Performing ADIIS interpolation of Fock operator ... done (0.00 s)
+
+Solving SCF equations ... done (0.01 s)
+HOMO-LUMO gap is    3.51 eV. Energies of lowest lying states:
+   -19.304519*   -19.298501*   -19.158411*   -19.087909*   -10.689636*
+   -10.651700*   -10.537361*   -10.391389*   -10.329127*   -10.314099*
+   -10.298904*   -10.284131*   -10.274028*    -1.299145*    -1.289110*
+    -1.154456*    -1.126040*    -0.974404*    -0.938822*    -0.858583*
+    -0.817934*    -0.758294*    -0.725864*    -0.682874*    -0.666302*
+    -0.650302*    -0.637537*    -0.599936*    -0.592988*    -0.585698*
+    -0.582480*    -0.559810*    -0.543274*    -0.528150*    -0.514878*
+    -0.487626*    -0.461097*    -0.455984*    -0.419194*    -0.415259*
+    -0.402955*    -0.393245*    -0.383062*    -0.371204*    -0.342479*
+    -0.315031*    -0.293194*    -0.164385     -0.157349     -0.060390 
+    -0.037973     -0.001534      0.016021      0.026212      0.033206 
+
+Dipole:	x		y		z		dipole change
+	 0.85901606	 1.93857066	-3.08786118	-1.807329e+01
+Energy:	electronic	total		virial		energy change
+	-1419.85934991	-637.19817428	 0.98911020	 8.29944
+	kinetic		nuclear		Coulomb		XC
+	 644.21352786	-3095.06046501	 1117.24776734	-86.26018010
+Errors:	Max dens	RMS dens	DIIS
+	 1.104379e+00	 5.709924e-02	 9.373302e-01
+
+Iteration took 7.67 s.
+
+ ******* Iteration    3 ********
+Forming HF Coulomb and exchange matrices ... done (3.02 s)
+Computing DFT exchange and correlation ... done (4.61 s)
+Numerically integrated density is 94.00013 (+0.0001 %).
+
+DIIS error too large, not using DIIS extrapolation.
+Performing ADIIS interpolation of Fock operator ... done (0.00 s)
+
+Solving SCF equations ... done (0.01 s)
+HOMO-LUMO gap is    3.03 eV. Energies of lowest lying states:
+   -19.782590*   -19.464925*   -18.905640*   -18.842429*   -10.260867*
+   -10.239626*   -10.208157*   -10.188365*   -10.134346*   -10.124105*
+    -9.994272*    -9.898675*    -9.790789*    -1.320946*    -1.168875*
+    -0.894741*    -0.864569*    -0.859637*    -0.819862*    -0.768192*
+    -0.731888*    -0.687072*    -0.678381*    -0.648804*    -0.599990*
+    -0.592375*    -0.565947*    -0.535098*    -0.527332*    -0.477033*
+    -0.470700*    -0.463263*    -0.440868*    -0.397604*    -0.375536*
+    -0.358323*    -0.323489*    -0.313706*    -0.285791*    -0.279047*
+    -0.273195*    -0.258437*    -0.246003*    -0.203796*    -0.194715*
+    -0.143452*    -0.137718*    -0.026337     -0.025066      0.039442 
+     0.063447      0.090195      0.106384      0.114280      0.132111 
+
+Dipole:	x		y		z		dipole change
+	 0.99813122	-1.68444361	 2.25580127	-7.587633e-01
+Energy:	electronic	total		virial		energy change
+	-1430.65779266	-647.99661703	 1.00110682	-10.7984
+	kinetic		nuclear		Coulomb		XC
+	 647.28019351	-3088.05013101	 1096.57119745	-86.45905262
+Errors:	Max dens	RMS dens	DIIS
+	 5.390188e-01	 2.640732e-02	 3.118711e-01
+
+Iteration took 7.69 s.
+
+ ******* Iteration    4 ********
+Forming HF Coulomb and exchange matrices ... done (3.01 s)
+Computing DFT exchange and correlation ... done (4.59 s)
+Numerically integrated density is 94.00009 (+0.0001 %).
+
+DIIS error too large, not using DIIS extrapolation.
+Performing ADIIS interpolation of Fock operator ... done (0.00 s)
+
+Solving SCF equations ... done (0.01 s)
+HOMO-LUMO gap is    5.10 eV. Energies of lowest lying states:
+   -19.193632*   -19.176370*   -19.158893*   -19.107297*   -10.230078*
+   -10.229641*   -10.228723*   -10.211799*   -10.195138*   -10.188805*
+   -10.186983*   -10.174462*   -10.077487*    -1.115399*    -1.099564*
+    -1.018077*    -0.994233*    -0.878795*    -0.784590*    -0.768069*
+    -0.702476*    -0.665328*    -0.632233*    -0.602846*    -0.573773*
+    -0.523125*    -0.505650*    -0.480294*    -0.467865*    -0.464402*
+    -0.452420*    -0.441918*    -0.435260*    -0.419362*    -0.403692*
+    -0.389481*    -0.379205*    -0.377489*    -0.361259*    -0.350878*
+    -0.339551*    -0.312834*    -0.290975*    -0.281584*    -0.272725*
+    -0.262244*    -0.238354*    -0.050934     -0.016733      0.046550 
+     0.061006      0.072550      0.083253      0.128032      0.135476 
+
+Dipole:	x		y		z		dipole change
+	-0.65639333	 0.62366849	-0.77419023	-1.795719e+00
+Energy:	electronic	total		virial		energy change
+	-1430.13375700	-647.47258137	 1.00196722	 0.524036
+	kinetic		nuclear		Coulomb		XC
+	 646.20136117	-3080.54898640	 1090.50722103	-86.29335279
+Errors:	Max dens	RMS dens	DIIS
+	 3.328351e-01	 1.522576e-02	 6.405743e-01
+
+Iteration took 7.64 s.
+
+ ******* Iteration    5 ********
+Forming HF Coulomb and exchange matrices ... done (3.01 s)
+Computing DFT exchange and correlation ... done (4.60 s)
+Numerically integrated density is 94.00011 (+0.0001 %).
+
+DIIS error too large, not using DIIS extrapolation.
+Performing ADIIS interpolation of Fock operator ... done (0.00 s)
+
+Solving SCF equations ... done (0.01 s)
+HOMO-LUMO gap is    5.38 eV. Energies of lowest lying states:
+   -19.230556*   -19.157969*   -19.151631*   -19.069564*   -10.522507*
+   -10.468045*   -10.327523*   -10.321829*   -10.235306*   -10.232920*
+   -10.223566*   -10.200704*   -10.193793*    -1.175709*    -1.166105*
+    -1.082406*    -1.047707*    -0.898165*    -0.840485*    -0.809469*
+    -0.772208*    -0.707725*    -0.669230*    -0.628765*    -0.612320*
+    -0.558395*    -0.545949*    -0.533687*    -0.511297*    -0.500629*
+    -0.493077*    -0.489393*    -0.478572*    -0.456333*    -0.450346*
+    -0.428786*    -0.428600*    -0.408895*    -0.389649*    -0.382113*
+    -0.373355*    -0.332785*    -0.322281*    -0.305337*    -0.279619*
+    -0.272464*    -0.271241*    -0.073425     -0.063429     -0.026787 
+     0.026155      0.053357      0.075628      0.088371      0.111810 
+
+Dipole:	x		y		z		dipole change
+	 0.81986153	-0.10513660	-0.33376335	-2.998784e-01
+Energy:	electronic	total		virial		energy change
+	-1431.10366589	-648.44249026	 1.00572509	-0.969909
+	kinetic		nuclear		Coulomb		XC
+	 644.75123113	-3079.07721750	 1089.36220509	-86.13988462
+Errors:	Max dens	RMS dens	DIIS
+	 1.869793e-01	 8.382936e-03	 6.795127e-02
+
+Iteration took 7.66 s.
+
+ ******* Iteration    6 ********
+Restarting Fock matrix formation from scratch.
+Forming HF Coulomb and exchange matrices ... done (3.01 s)
+Computing DFT exchange and correlation ... done (4.63 s)
+Numerically integrated density is 94.00012 (+0.0001 %).
+
+DIIS error too large, not using DIIS extrapolation.
+Performing ADIIS interpolation of Fock operator ... done (0.00 s)
+
+Solving SCF equations ... done (0.01 s)
+HOMO-LUMO gap is    5.46 eV. Energies of lowest lying states:
+   -19.202357*   -19.198993*   -19.185141*   -19.172885*   -10.389460*
+   -10.376509*   -10.284229*   -10.234015*   -10.221140*   -10.217409*
+   -10.214305*   -10.211509*   -10.210797*    -1.155854*    -1.143285*
+    -1.067484*    -1.053176*    -0.886391*    -0.802182*    -0.793134*
+    -0.758105*    -0.689130*    -0.653977*    -0.616804*    -0.596062*
+    -0.538238*    -0.519415*    -0.514786*    -0.500144*    -0.488747*
+    -0.484688*    -0.475872*    -0.470764*    -0.453906*    -0.425273*
+    -0.418769*    -0.415313*    -0.405008*    -0.385224*    -0.379482*
+    -0.371161*    -0.333302*    -0.321614*    -0.302930*    -0.300167*
+    -0.277942*    -0.267705*    -0.067013     -0.031163     -0.019790 
+     0.035648      0.062007      0.083897      0.104286      0.127597 
+
+Dipole:	x		y		z		dipole change
+	-0.14156155	 0.49748823	-0.95726314	 1.966485e-01
+Energy:	electronic	total		virial		energy change
+	-1431.02562158	-648.36444595	 1.00570075	 0.0780443
+	kinetic		nuclear		Coulomb		XC
+	 644.68923239	-3082.80730289	 1093.17707764	-86.08462872
+Errors:	Max dens	RMS dens	DIIS
+	 1.070332e-01	 4.922376e-03	 1.407522e-01
+
+Iteration took 7.69 s.
+
+ ******* Iteration    7 ********
+Forming HF Coulomb and exchange matrices ... done (3.00 s)
+Computing DFT exchange and correlation ... done (4.62 s)
+Numerically integrated density is 94.00011 (+0.0001 %).
+
+Using DIIS extrapolated Fock operator.
+DIIS weights
+   0.6260   0.2801   0.1032  -0.0190   0.0097  -0.0009   0.0009
+
+Solving SCF equations ... done (0.01 s)
+HOMO-LUMO gap is    5.55 eV. Energies of lowest lying states:
+   -19.210187*   -19.207180*   -19.157283*   -19.151710*   -10.343415*
+   -10.336412*   -10.272669*   -10.231856*   -10.215768*   -10.209120*
+   -10.206481*   -10.204953*   -10.193925*    -1.148730*    -1.129995*
+    -1.050859*    -1.044078*    -0.883968*    -0.794320*    -0.785138*
+    -0.748368*    -0.684819*    -0.648499*    -0.615016*    -0.591836*
+    -0.533694*    -0.513797*    -0.498441*    -0.493734*    -0.480594*
+    -0.477116*    -0.467770*    -0.461493*    -0.452066*    -0.414816*
+    -0.411236*    -0.407851*    -0.396487*    -0.382289*    -0.372717*
+    -0.368562*    -0.329750*    -0.316042*    -0.293099*    -0.285635*
+    -0.275966*    -0.265092*    -0.061257     -0.019394     -0.009370 
+     0.042326      0.062209      0.085649      0.110015      0.131965 
+
+Dipole:	x		y		z		dipole change
+	-0.14776969	 0.54752536	-0.85574891	-6.145665e-02
+Energy:	electronic	total		virial		energy change
+	-1431.14260285	-648.48142722	 1.00475656	-0.116981
+	kinetic		nuclear		Coulomb		XC
+	 645.41149034	-3082.34565947	 1092.00161396	-86.21004767
+Errors:	Max dens	RMS dens	DIIS
+	 2.179778e-02	 1.127055e-03	 2.498836e-02
+
+Iteration took 7.67 s.
+
+ ******* Iteration    8 ********
+Forming HF Coulomb and exchange matrices ... done (3.00 s)
+Computing DFT exchange and correlation ... done (4.61 s)
+Numerically integrated density is 94.00011 (+0.0001 %).
+
+Using DIIS extrapolated Fock operator.
+DIIS weights
+   0.4735   0.3679   0.1248   0.0441  -0.0163   0.0059  -0.0006   0.0007
+
+Solving SCF equations ... done (0.01 s)
+HOMO-LUMO gap is    5.58 eV. Energies of lowest lying states:
+   -19.207185*   -19.203296*   -19.152005*   -19.151784*   -10.338981*
+   -10.336052*   -10.273139*   -10.224241*   -10.213091*   -10.210128*
+   -10.209504*   -10.205309*   -10.193563*    -1.145739*    -1.129460*
+    -1.049176*    -1.041645*    -0.883132*    -0.793724*    -0.784553*
+    -0.748145*    -0.683310*    -0.648260*    -0.613824*    -0.590831*
+    -0.532800*    -0.513218*    -0.497642*    -0.492883*    -0.479674*
+    -0.475936*    -0.465537*    -0.460899*    -0.451488*    -0.413815*
+    -0.410223*    -0.407022*    -0.396245*    -0.382069*    -0.371988*
+    -0.368161*    -0.327496*    -0.315287*    -0.291463*    -0.283551*
+    -0.275272*    -0.265060*    -0.059966     -0.019178     -0.008380 
+     0.043357      0.063795      0.085111      0.110172      0.131806 
+
+Dipole:	x		y		z		dipole change
+	-0.16784513	 0.48127142	-0.80586910	-7.307918e-02
+Energy:	electronic	total		virial		energy change
+	-1431.14757191	-648.48639628	 1.00508108	-0.00496906
+	kinetic		nuclear		Coulomb		XC
+	 645.20804227	-3081.65735995	 1091.48731501	-86.18556924
+Errors:	Max dens	RMS dens	DIIS
+	 5.274761e-03	 3.125012e-04	 4.006717e-03
+
+Iteration took 7.67 s.
+
+ ******* Iteration    9 ********
+Forming HF Coulomb and exchange matrices ... done (3.05 s)
+Computing DFT exchange and correlation ... done (4.64 s)
+Numerically integrated density is 94.00011 (+0.0001 %).
+
+Using DIIS extrapolated Fock operator.
+DIIS weights
+   6.5775e-01   2.6389e-01   6.4619e-02   1.0517e-02   7.1249e-03  -5.7093e-03   1.7675e-03  -6.9456e-05   1.0427e-04
+
+Solving SCF equations ... done (0.01 s)
+HOMO-LUMO gap is    5.59 eV. Energies of lowest lying states:
+   -19.207981*   -19.203678*   -19.154917*   -19.149427*   -10.339456*
+   -10.335583*   -10.273836*   -10.224622*   -10.212281*   -10.211279*
+   -10.208784*   -10.205576*   -10.193606*    -1.145480*    -1.129993*
+    -1.049893*    -1.040895*    -0.883533*    -0.793972*    -0.784824*
+    -0.748257*    -0.683540*    -0.648582*    -0.614171*    -0.591083*
+    -0.533056*    -0.513428*    -0.497789*    -0.493136*    -0.480066*
+    -0.475490*    -0.465515*    -0.460950*    -0.451769*    -0.413555*
+    -0.410549*    -0.406944*    -0.396444*    -0.382396*    -0.372278*
+    -0.368618*    -0.327024*    -0.315959*    -0.290470*    -0.284336*
+    -0.275420*    -0.265573*    -0.059996     -0.019592     -0.008682 
+     0.043403      0.064125      0.084861      0.110314      0.131548 
+
+Dipole:	x		y		z		dipole change
+	-0.16638508	 0.47084551	-0.80586740	-5.478290e-03
+Energy:	electronic	total		virial		energy change
+	-1431.14775959	-648.48658397	 1.00516500	-0.000187682
+	kinetic		nuclear		Coulomb		XC
+	 645.15436425	-3081.47941141	 1091.35536624	-86.17807868
+Errors:	Max dens	RMS dens	DIIS
+	 2.276355e-03	 1.100234e-04	 2.162648e-03
+
+Iteration took 7.75 s.
+
+ ******* Iteration   10 ********
+Forming HF Coulomb and exchange matrices ... done (3.04 s)
+Computing DFT exchange and correlation ... done (4.66 s)
+Numerically integrated density is 94.00011 (+0.0001 %).
+
+Using DIIS extrapolated Fock operator.
+DIIS weights
+   4.0855e-01   4.2228e-01   1.4248e-01   2.3594e-02   1.9195e-03   2.9874e-03  -2.7534e-03   9.1597e-04  -1.1008e-05   4.0534e-05
+
+Solving SCF equations ... done (0.01 s)
+HOMO-LUMO gap is    5.59 eV. Energies of lowest lying states:
+   -19.208216*   -19.204413*   -19.153968*   -19.150486*   -10.339503*
+   -10.336045*   -10.273453*   -10.225144*   -10.212002*   -10.211249*
+   -10.208723*   -10.205246*   -10.193644*    -1.145787*    -1.130046*
+    -1.049720*    -1.041293*    -0.883516*    -0.793991*    -0.784855*
+    -0.748247*    -0.683623*    -0.648611*    -0.614222*    -0.591149*
+    -0.533092*    -0.513475*    -0.497789*    -0.493164*    -0.480022*
+    -0.475739*    -0.465696*    -0.460976*    -0.451781*    -0.413684*
+    -0.410473*    -0.407063*    -0.396431*    -0.382368*    -0.372222*
+    -0.368604*    -0.327393*    -0.315915*    -0.290893*    -0.284074*
+    -0.275486*    -0.265502*    -0.060098     -0.019527     -0.008663 
+     0.043309      0.064008      0.084893      0.110302      0.131577 
+
+Dipole:	x		y		z		dipole change
+	-0.16389443	 0.47901528	-0.80272216	 9.900020e-04
+Energy:	electronic	total		virial		energy change
+	-1431.14777986	-648.48660423	 1.00515358	-2.02611e-05
+	kinetic		nuclear		Coulomb		XC
+	 645.16170874	-3081.51610528	 1091.38562501	-86.17900833
+Errors:	Max dens	RMS dens	DIIS
+	 8.839795e-04	 3.504725e-05	 1.085224e-03
+
+Iteration took 7.76 s.
+
+ ******* Iteration   11 ********
+Restarting Fock matrix formation from scratch.
+Forming HF Coulomb and exchange matrices ... done (3.03 s)
+Computing DFT exchange and correlation ... done (4.65 s)
+Numerically integrated density is 94.00011 (+0.0001 %).
+
+Using DIIS extrapolated Fock operator.
+DIIS weights
+   5.9294e-01   2.0441e-01   1.4925e-01   4.7278e-02   5.3788e-03   3.3843e-04   9.9428e-04  -8.3170e-04   2.2399e-04   5.8059e-06
+
+Solving SCF equations ... done (0.01 s)
+HOMO-LUMO gap is    5.59 eV. Energies of lowest lying states:
+   -19.207997*   -19.204547*   -19.154059*   -19.150396*   -10.339493*
+   -10.335927*   -10.273360*   -10.225090*   -10.212223*   -10.211085*
+   -10.208894*   -10.205272*   -10.193491*    -1.145799*    -1.129960*
+    -1.049695*    -1.041291*    -0.883519*    -0.794003*    -0.784814*
+    -0.748208*    -0.683633*    -0.648572*    -0.614211*    -0.591136*
+    -0.533091*    -0.513455*    -0.497736*    -0.493162*    -0.480013*
+    -0.475732*    -0.465695*    -0.460948*    -0.451776*    -0.413670*
+    -0.410458*    -0.407036*    -0.396387*    -0.382373*    -0.372221*
+    -0.368580*    -0.327407*    -0.315859*    -0.290881*    -0.284091*
+    -0.275505*    -0.265487*    -0.060095     -0.019517     -0.008629 
+     0.043290      0.063988      0.084894      0.110334      0.131604 
+
+Dipole:	x		y		z		dipole change
+	-0.16436468	 0.47648807	-0.80359090	-4.557884e-04
+Energy:	electronic	total		virial		energy change
+	-1431.14778369	-648.48660806	 1.00514782	-3.83859e-06
+	kinetic		nuclear		Coulomb		XC
+	 645.16541039	-3081.52745228	 1091.39374135	-86.17948316
+Errors:	Max dens	RMS dens	DIIS
+	 1.400557e-04	 1.045885e-05	 1.735389e-04
+
+Iteration took 7.73 s.
+
+ ******* Convergence achieved ********
+Dipole moment is (-0.417773,1.211112,-2.042524) D, |mu|=2.411064 D.
+Solution of RDFT took 1 min 36.43 s.
+
+ ******* Initialization of run ********
+
+Using input guess for orbitals.
+HOMO-LUMO gap is    5.59 eV. Energies of lowest lying states:
+   -19.207997*   -19.204547*   -19.154059*   -19.150396*   -10.339493*
+   -10.335927*   -10.273360*   -10.225090*   -10.212223*   -10.211085*
+   -10.208894*   -10.205272*   -10.193491*    -1.145799*    -1.129960*
+    -1.049695*    -1.041291*    -0.883519*    -0.794003*    -0.784814*
+    -0.748208*    -0.683633*    -0.648572*    -0.614211*    -0.591136*
+    -0.533091*    -0.513455*    -0.497736*    -0.493162*    -0.480013*
+    -0.475732*    -0.465695*    -0.460948*    -0.451776*    -0.413670*
+    -0.410458*    -0.407036*    -0.396387*    -0.382373*    -0.372221*
+    -0.368580*    -0.327407*    -0.315859*    -0.290881*    -0.284091*
+    -0.275505*    -0.265487*    -0.060095     -0.019517     -0.008629 
+     0.043290      0.063988      0.084894      0.110334      0.131604 
+
+Orbital occupancies:
+2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 
+2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 
+2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 
+2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 
+
+Using hybrid exchange with  20.000 of exact exchange.
+Constructing DFT grid.
+	atom  Npoints      Nfuncs  t
+	   1     6546      546707  1.77 s
+	   2     6462      552807  1.80 s
+	   3     6258      471241  1.44 s
+	   4     6558      497625  1.56 s
+	   5     5922      403965  1.20 s
+	   6     6318      592514  2.01 s
+	   7     6282      597490  2.05 s
+	   8     6066      446409  1.32 s
+	   9     5682      465307  1.42 s
+	  10     6618      552028  1.77 s
+	  11     6282      543852  1.78 s
+	  12     6114      525811  1.71 s
+	  13     5818      532465  1.73 s
+	  14     5428      385218  1.17 s
+	  15     5548      400277  1.21 s
+	  16     5116      386158  1.17 s
+	  17     4936      289659  0.80 s
+	  18     5296      319551  0.91 s
+	  19     5092      321140  0.93 s
+	  20     5104      286751  0.79 s
+	  21     5200      308438  0.88 s
+DFT XC grid constructed in 29.41 s.
+
+ ******* Iteration    1 ********
+Forming HF Coulomb and exchange matrices ... done (3.02 s)
+Computing DFT exchange and correlation ... done (11.44 s)
+Numerically integrated density is 94.00002 (+0.0000 %).
+
+Using DIIS extrapolated Fock operator.
+DIIS weights
+   1.0000
+
+Solving SCF equations ... done (0.01 s)
+HOMO-LUMO gap is    5.59 eV. Energies of lowest lying states:
+   -19.208197*   -19.204327*   -19.153969*   -19.150517*   -10.339503*
+   -10.335909*   -10.273451*   -10.225093*   -10.211940*   -10.211234*
+   -10.208634*   -10.205223*   -10.193546*    -1.145773*    -1.129994*
+    -1.049683*    -1.041297*    -0.883498*    -0.793966*    -0.784823*
+    -0.748214*    -0.683604*    -0.648577*    -0.614203*    -0.591124*
+    -0.533068*    -0.513450*    -0.497750*    -0.493132*    -0.479994*
+    -0.475737*    -0.465691*    -0.460948*    -0.451758*    -0.413666*
+    -0.410448*    -0.407042*    -0.396394*    -0.382342*    -0.372202*
+    -0.368573*    -0.327386*    -0.315874*    -0.290922*    -0.284068*
+    -0.275473*    -0.265484*    -0.060091     -0.019508     -0.008630 
+     0.043312      0.063998      0.084929      0.110320      0.131609 
+
+Dipole:	x		y		z		dipole change
+	-0.16445150	 0.47988103	-0.80374657	 9.504413e-01
+Energy:	electronic	total		virial		energy change
+	-1431.14776377	-648.48658814	 1.00514809	-648.487
+	kinetic		nuclear		Coulomb		XC
+	 645.16522011	-3081.52517395	 1091.39164280	-86.17945273
+Errors:	Max dens	RMS dens	DIIS
+	 1.703324e-04	 1.402366e-05	 1.067075e-04
+
+Iteration took 14.51 s.
+
+ ******* Iteration    2 ********
+Forming HF Coulomb and exchange matrices ... done (3.01 s)
+Computing DFT exchange and correlation ... done (11.28 s)
+Numerically integrated density is 94.00002 (+0.0000 %).
+
+Using DIIS extrapolated Fock operator.
+DIIS weights
+   0.6557   0.3443
+
+Solving SCF equations ... done (0.01 s)
+HOMO-LUMO gap is    5.59 eV. Energies of lowest lying states:
+   -19.208068*   -19.204495*   -19.154092*   -19.150415*   -10.339463*
+   -10.335888*   -10.273380*   -10.225039*   -10.212094*   -10.211111*
+   -10.208772*   -10.205235*   -10.193506*    -1.145783*    -1.129963*
+    -1.049696*    -1.041279*    -0.883498*    -0.793978*    -0.784808*
+    -0.748207*    -0.683614*    -0.648565*    -0.614201*    -0.591123*
+    -0.533073*    -0.513443*    -0.497743*    -0.493146*    -0.480004*
+    -0.475727*    -0.465689*    -0.460945*    -0.451757*    -0.413665*
+    -0.410457*    -0.407035*    -0.396384*    -0.382352*    -0.372211*
+    -0.368570*    -0.327396*    -0.315861*    -0.290885*    -0.284100*
+    -0.275480*    -0.265477*    -0.060082     -0.019507     -0.008634 
+     0.043306      0.063991      0.084918      0.110325      0.131614 
+
+Dipole:	x		y		z		dipole change
+	-0.16431323	 0.47744470	-0.80382560	-1.184807e-03
+Energy:	electronic	total		virial		energy change
+	-1431.14776363	-648.48658800	 1.00514982	 1.42465e-07
+	kinetic		nuclear		Coulomb		XC
+	 645.16410800	-3081.52429628	 1091.39172693	-86.17930229
+Errors:	Max dens	RMS dens	DIIS
+	 1.166969e-04	 7.714521e-06	 1.982937e-04
+
+Iteration took 14.34 s.
+
+ ******* Iteration    3 ********
+Forming HF Coulomb and exchange matrices ... done (3.01 s)
+Computing DFT exchange and correlation ... done (11.24 s)
+Numerically integrated density is 94.00002 (+0.0000 %).
+
+Using DIIS extrapolated Fock operator.
+DIIS weights
+   0.7598   0.1289   0.1113
+
+Solving SCF equations ... done (0.01 s)
+HOMO-LUMO gap is    5.59 eV. Energies of lowest lying states:
+   -19.208094*   -19.204510*   -19.154040*   -19.150468*   -10.339454*
+   -10.335903*   -10.273363*   -10.225058*   -10.212111*   -10.211102*
+   -10.208793*   -10.205227*   -10.193490*    -1.145790*    -1.129968*
+    -1.049686*    -1.041293*    -0.883502*    -0.793984*    -0.784810*
+    -0.748206*    -0.683618*    -0.648569*    -0.614204*    -0.591128*
+    -0.533077*    -0.513448*    -0.497740*    -0.493149*    -0.480003*
+    -0.475738*    -0.465694*    -0.460946*    -0.451760*    -0.413669*
+    -0.410452*    -0.407038*    -0.396385*    -0.382355*    -0.372210*
+    -0.368573*    -0.327408*    -0.315862*    -0.290902*    -0.284084*
+    -0.275488*    -0.265478*    -0.060089     -0.019507     -0.008631 
+     0.043300      0.063990      0.084915      0.110325      0.131613 
+
+Dipole:	x		y		z		dipole change
+	-0.16429235	 0.47760547	-0.80353970	-1.648071e-04
+Energy:	electronic	total		virial		energy change
+	-1431.14776385	-648.48658822	 1.00514894	-2.2009e-07
+	kinetic		nuclear		Coulomb		XC
+	 645.16467689	-3081.52430178	 1091.39125467	-86.17939363
+Errors:	Max dens	RMS dens	DIIS
+	 4.574304e-05	 1.812173e-06	 2.975612e-05
+
+Iteration took 14.30 s.
+
+ ******* Iteration    4 ********
+Forming HF Coulomb and exchange matrices ... done (3.02 s)
+Computing DFT exchange and correlation ... done (11.25 s)
+Numerically integrated density is 94.00002 (+0.0000 %).
+
+Using DIIS extrapolated Fock operator.
+DIIS weights
+   0.5585   0.4394  -0.0147   0.0168
+
+Solving SCF equations ... done (0.01 s)
+HOMO-LUMO gap is    5.59 eV. Energies of lowest lying states:
+   -19.208082*   -19.204501*   -19.154072*   -19.150448*   -10.339462*
+   -10.335893*   -10.273373*   -10.225059*   -10.212098*   -10.211117*
+   -10.208779*   -10.205232*   -10.193491*    -1.145788*    -1.129967*
+    -1.049693*    -1.041289*    -0.883503*    -0.793983*    -0.784810*
+    -0.748207*    -0.683618*    -0.648568*    -0.614204*    -0.591127*
+    -0.533077*    -0.513448*    -0.497741*    -0.493148*    -0.480004*
+    -0.475734*    -0.465694*    -0.460946*    -0.451761*    -0.413667*
+    -0.410455*    -0.407037*    -0.396385*    -0.382355*    -0.372212*
+    -0.368573*    -0.327403*    -0.315863*    -0.290897*    -0.284093*
+    -0.275487*    -0.265479*    -0.060089     -0.019509     -0.008633 
+     0.043301      0.063991      0.084916      0.110326      0.131613 
+
+Dipole:	x		y		z		dipole change
+	-0.16433410	 0.47763751	-0.80374916	 2.006923e-04
+Energy:	electronic	total		virial		energy change
+	-1431.14776385	-648.48658822	 1.00514868	 1.03205e-09
+	kinetic		nuclear		Coulomb		XC
+	 645.16483963	-3081.52471103	 1091.39152367	-86.17941611
+Errors:	Max dens	RMS dens	DIIS
+	 2.598743e-05	 1.106474e-06	 3.537040e-05
+
+Iteration took 14.33 s.
+
+ ******* Iteration    5 ********
+Forming HF Coulomb and exchange matrices ... done (3.01 s)
+Computing DFT exchange and correlation ... done (11.28 s)
+Numerically integrated density is 94.00002 (+0.0000 %).
+
+Using DIIS extrapolated Fock operator.
+DIIS weights
+   0.4130   0.3223   0.2744  -0.0151   0.0054
+
+Solving SCF equations ... done (0.01 s)
+HOMO-LUMO gap is    5.59 eV. Energies of lowest lying states:
+   -19.208084*   -19.204500*   -19.154069*   -19.150444*   -10.339459*
+   -10.335894*   -10.273375*   -10.225051*   -10.212098*   -10.211113*
+   -10.208780*   -10.205232*   -10.193495*    -1.145787*    -1.129967*
+    -1.049692*    -1.041287*    -0.883502*    -0.793982*    -0.784810*
+    -0.748207*    -0.683617*    -0.648568*    -0.614203*    -0.591126*
+    -0.533076*    -0.513447*    -0.497741*    -0.493148*    -0.480004*
+    -0.475733*    -0.465692*    -0.460946*    -0.451760*    -0.413667*
+    -0.410455*    -0.407037*    -0.396385*    -0.382355*    -0.372211*
+    -0.368573*    -0.327402*    -0.315863*    -0.290895*    -0.284093*
+    -0.275485*    -0.265479*    -0.060087     -0.019508     -0.008633 
+     0.043302      0.063991      0.084916      0.110325      0.131612 
+
+Dipole:	x		y		z		dipole change
+	-0.16432363	 0.47758515	-0.80370777	-6.320368e-05
+Energy:	electronic	total		virial		energy change
+	-1431.14776385	-648.48658822	 1.00514878	-4.08295e-09
+	kinetic		nuclear		Coulomb		XC
+	 645.16477810	-3081.52465405	 1091.39151990	-86.17940780
+Errors:	Max dens	RMS dens	DIIS
+	 5.285270e-06	 2.372135e-07	 3.589581e-06
+
+Iteration took 14.34 s.
+
+ ******* Iteration    6 ********
+Restarting Fock matrix formation from scratch.
+Forming HF Coulomb and exchange matrices ... done (3.02 s)
+Computing DFT exchange and correlation ... done (11.24 s)
+Numerically integrated density is 94.00002 (+0.0000 %).
+
+Using DIIS extrapolated Fock operator.
+DIIS weights
+   0.7018   0.1553   0.0786   0.0681  -0.0045   0.0006
+
+Solving SCF equations ... done (0.01 s)
+HOMO-LUMO gap is    5.59 eV. Energies of lowest lying states:
+   -19.208083*   -19.204499*   -19.154070*   -19.150445*   -10.339459*
+   -10.335894*   -10.273374*   -10.225051*   -10.212098*   -10.211113*
+   -10.208780*   -10.205232*   -10.193496*    -1.145787*    -1.129966*
+    -1.049692*    -1.041287*    -0.883502*    -0.793982*    -0.784810*
+    -0.748207*    -0.683617*    -0.648568*    -0.614203*    -0.591126*
+    -0.533076*    -0.513447*    -0.497741*    -0.493148*    -0.480004*
+    -0.475733*    -0.465692*    -0.460946*    -0.451760*    -0.413667*
+    -0.410455*    -0.407037*    -0.396385*    -0.382355*    -0.372211*
+    -0.368572*    -0.327402*    -0.315862*    -0.290895*    -0.284093*
+    -0.275485*    -0.265479*    -0.060087     -0.019508     -0.008633 
+     0.043302      0.063991      0.084916      0.110325      0.131613 
+
+Dipole:	x		y		z		dipole change
+	-0.16432720	 0.47759208	-0.80371900	 1.361185e-05
+Energy:	electronic	total		virial		energy change
+	-1431.14776385	-648.48658822	 1.00514882	-1.56888e-10
+	kinetic		nuclear		Coulomb		XC
+	 645.16475298	-3081.52457468	 1091.39146208	-86.17940423
+Errors:	Max dens	RMS dens	DIIS
+	 1.012345e-06	 6.211449e-08	 5.834060e-07
+
+Iteration took 14.31 s.
+
+ ******* Iteration    7 ********
+Forming HF Coulomb and exchange matrices ... done (3.03 s)
+Computing DFT exchange and correlation ... done (11.24 s)
+Numerically integrated density is 94.00002 (+0.0000 %).
+
+Using DIIS extrapolated Fock operator.
+DIIS weights
+   0.4992   0.3972   0.0628   0.0230   0.0198  -0.0017  -0.0002
+
+Solving SCF equations ... done (0.01 s)
+HOMO-LUMO gap is    5.59 eV. Energies of lowest lying states:
+   -19.208083*   -19.204500*   -19.154069*   -19.150444*   -10.339459*
+   -10.335894*   -10.273374*   -10.225052*   -10.212098*   -10.211113*
+   -10.208780*   -10.205232*   -10.193496*    -1.145787*    -1.129967*
+    -1.049692*    -1.041287*    -0.883502*    -0.793982*    -0.784810*
+    -0.748207*    -0.683617*    -0.648568*    -0.614203*    -0.591126*
+    -0.533076*    -0.513447*    -0.497741*    -0.493148*    -0.480004*
+    -0.475733*    -0.465692*    -0.460946*    -0.451760*    -0.413667*
+    -0.410455*    -0.407037*    -0.396385*    -0.382355*    -0.372211*
+    -0.368572*    -0.327402*    -0.315863*    -0.290895*    -0.284093*
+    -0.275485*    -0.265479*    -0.060087     -0.019508     -0.008633 
+     0.043302      0.063991      0.084916      0.110325      0.131613 
+
+Dipole:	x		y		z		dipole change
+	-0.16432187	 0.47759054	-0.80371345	-6.390752e-06
+Energy:	electronic	total		virial		energy change
+	-1431.14776385	-648.48658822	 1.00514882	 0
+	kinetic		nuclear		Coulomb		XC
+	 645.16475126	-3081.52454755	 1091.39143664	-86.17940421
+Errors:	Max dens	RMS dens	DIIS
+	 7.486966e-07	 3.073524e-08	 8.572577e-07
+
+Iteration took 14.32 s.
+
+ ******* Iteration    8 ********
+Forming HF Coulomb and exchange matrices ... done (3.07 s)
+Computing DFT exchange and correlation ... done (11.24 s)
+Numerically integrated density is 94.00002 (+0.0000 %).
+
+Using DIIS extrapolated Fock operator.
+DIIS weights
+   0.5005   0.2339   0.2491   0.0161   0.0006   0.0003  -0.0003  -0.0002
+
+Solving SCF equations ... done (0.01 s)
+HOMO-LUMO gap is    5.59 eV. Energies of lowest lying states:
+   -19.208083*   -19.204500*   -19.154070*   -19.150444*   -10.339459*
+   -10.335894*   -10.273374*   -10.225052*   -10.212098*   -10.211113*
+   -10.208780*   -10.205232*   -10.193496*    -1.145787*    -1.129967*
+    -1.049692*    -1.041287*    -0.883502*    -0.793982*    -0.784810*
+    -0.748207*    -0.683617*    -0.648568*    -0.614203*    -0.591126*
+    -0.533076*    -0.513447*    -0.497741*    -0.493148*    -0.480004*
+    -0.475733*    -0.465692*    -0.460946*    -0.451760*    -0.413667*
+    -0.410455*    -0.407037*    -0.396385*    -0.382355*    -0.372211*
+    -0.368572*    -0.327402*    -0.315863*    -0.290895*    -0.284093*
+    -0.275485*    -0.265479*    -0.060087     -0.019508     -0.008633 
+     0.043302      0.063991      0.084916      0.110325      0.131613 
+
+Dipole:	x		y		z		dipole change
+	-0.16432375	 0.47758997	-0.80371411	 5.951113e-07
+Energy:	electronic	total		virial		energy change
+	-1431.14776385	-648.48658822	 1.00514882	-2.95586e-12
+	kinetic		nuclear		Coulomb		XC
+	 645.16475050	-3081.52455792	 1091.39144755	-86.17940399
+Errors:	Max dens	RMS dens	DIIS
+	 1.074227e-07	 7.747204e-09	 1.811091e-07
+
+Iteration took 14.36 s.
+
+ ******* Iteration    9 ********
+Forming HF Coulomb and exchange matrices ... done (3.07 s)
+Computing DFT exchange and correlation ... done (11.25 s)
+Numerically integrated density is 94.00002 (+0.0000 %).
+
+Using DIIS extrapolated Fock operator.
+DIIS weights
+   7.0029e-01   2.0578e-01   4.0241e-02   5.8046e-02   1.6376e-04  -2.3395e-03  -2.1603e-03   5.9140e-05  -7.5280e-05
+
+Solving SCF equations ... done (0.01 s)
+HOMO-LUMO gap is    5.59 eV. Energies of lowest lying states:
+   -19.208083*   -19.204500*   -19.154070*   -19.150444*   -10.339459*
+   -10.335894*   -10.273374*   -10.225052*   -10.212098*   -10.211113*
+   -10.208780*   -10.205232*   -10.193496*    -1.145787*    -1.129967*
+    -1.049692*    -1.041287*    -0.883502*    -0.793982*    -0.784810*
+    -0.748207*    -0.683617*    -0.648568*    -0.614203*    -0.591126*
+    -0.533076*    -0.513447*    -0.497741*    -0.493148*    -0.480004*
+    -0.475733*    -0.465692*    -0.460946*    -0.451760*    -0.413667*
+    -0.410455*    -0.407037*    -0.396385*    -0.382355*    -0.372211*
+    -0.368572*    -0.327402*    -0.315863*    -0.290895*    -0.284093*
+    -0.275485*    -0.265479*    -0.060087     -0.019508     -0.008633 
+     0.043302      0.063991      0.084916      0.110325      0.131613 
+
+Dipole:	x		y		z		dipole change
+	-0.16432340	 0.47759023	-0.80371412	 7.616310e-08
+Energy:	electronic	total		virial		energy change
+	-1431.14776385	-648.48658822	 1.00514882	-1.36424e-12
+	kinetic		nuclear		Coulomb		XC
+	 645.16475189	-3081.52455995	 1091.39144840	-86.17940420
+Errors:	Max dens	RMS dens	DIIS
+	 3.071715e-08	 2.074097e-09	 2.982399e-08
+
+Iteration took 14.37 s.
+
+ ******* Convergence achieved ********
+Dipole moment is (-0.417668,1.213913,-2.042837) D, |mu|=2.412720 D.
+Solution of RDFT took 2 min 38.64 s.
+
+Mulliken charges
+   1 C           -0.158356
+   2 C           -0.098954
+   3 C           -0.118611
+   4 C           -0.116845
+   5 C           -0.457439
+   6 C            0.127817
+   7 C            0.226163
+   8 O           -0.395106
+   9 O           -0.391094
+  10 O           -0.536977
+  11 C            0.399542
+  12 C            0.501594
+  13 O           -0.512273
+  14 H            0.386436
+  15 H            0.178320
+  16 H            0.146810
+  17 H            0.140403
+  18 H            0.144395
+  19 H            0.186583
+  20 H            0.172403
+  21 H            0.175188
+Sum of Mulliken charges 1.210143e-14
+
+Electron density at nuclei
+   1 C          118.167082
+   2 C          118.156506
+   3 C          118.145865
+   4 C          118.163921
+   5 C          118.100300
+   6 C          118.109024
+   7 C          118.093668
+   8 O          291.309972
+   9 O          291.363848
+  10 O          291.145671
+  11 C          118.074533
+  12 C          118.113797
+  13 O          291.207217
+  14 H            0.396590
+  15 H            0.422177
+  16 H            0.425875
+  17 H            0.428743
+  18 H            0.429202
+  19 H            0.418075
+  20 H            0.421356
+  21 H            0.419948
+Computed energy -648.48658822 in 5 min 39.41 s.
+Found    energy -648.48658822 in checkpoint file and calculated forces (max = 4.055e-02, rms = 1.824e-02) in 3 min 54.52 s.
+
+Geometry iteration 1
+Computed energy -648.48806658 in 4 min 50.20 s.
+Found    energy -648.48806658 in checkpoint file and calculated forces (max = 3.300e-02, rms = 1.423e-02) in 3 min 54.95 s.
+Computed energy -648.49028650 in 4 min 55.02 s.
+Found    energy -648.49028650 in checkpoint file and calculated forces (max = 2.498e-02, rms = 9.911e-03) in 3 min 54.25 s.
+
+Geometry iteration 2
+Computed energy -648.48888646 in 5 min 1.72 s.
+Computed energy -648.49184869 in 4 min 54.83 s.
+Found    energy -648.49184869 in checkpoint file and calculated forces (max = 1.044e-02, rms = 5.544e-03) in 3 min 54.01 s.
+
+Geometry iteration 3
+Computed energy -648.49185673 in 4 min 53.98 s.
+Computed energy -648.49263010 in 4 min 54.45 s.
+Found    energy -648.49263010 in checkpoint file and calculated forces (max = 8.915e-03, rms = 4.762e-03) in 3 min 53.04 s.
+
+Geometry iteration 4
+Computed energy -648.49309187 in 4 min 53.50 s.
+Found    energy -648.49309187 in checkpoint file and calculated forces (max = 1.321e-02, rms = 6.376e-03) in 3 min 52.78 s.
+Computed energy -648.49318326 in 4 min 47.11 s.
+Found    energy -648.49318326 in checkpoint file and calculated forces (max = 8.793e-03, rms = 4.314e-03) in 3 min 52.86 s.
+
+Geometry iteration 5
+Computed energy -648.49342317 in 4 min 59.91 s.
+Found    energy -648.49342317 in checkpoint file and calculated forces (max = 1.365e-02, rms = 5.405e-03) in 3 min 51.50 s.
+Computed energy -648.49353580 in 4 min 46.33 s.
+Found    energy -648.49353580 in checkpoint file and calculated forces (max = 6.816e-03, rms = 3.121e-03) in 3 min 52.72 s.
+
+Geometry iteration 6
+Computed energy -648.49350066 in 4 min 45.98 s.
+Computed energy -648.49370368 in 4 min 45.60 s.
+Found    energy -648.49370368 in checkpoint file and calculated forces (max = 3.346e-03, rms = 2.106e-03) in 3 min 51.48 s.
+
+Geometry iteration 7
+Computed energy -648.49378694 in 4 min 45.73 s.
+Found    energy -648.49378694 in checkpoint file and calculated forces (max = 5.141e-03, rms = 2.955e-03) in 3 min 51.76 s.
+Computed energy -648.49381448 in 4 min 45.14 s.
+Found    energy -648.49381448 in checkpoint file and calculated forces (max = 3.412e-03, rms = 1.835e-03) in 3 min 52.07 s.
+
+Geometry iteration 8
+Computed energy -648.49388069 in 4 min 45.75 s.
+Found    energy -648.49388069 in checkpoint file and calculated forces (max = 4.515e-03, rms = 2.285e-03) in 3 min 52.06 s.
+Computed energy -648.49389420 in 4 min 30.94 s.
+Found    energy -648.49389420 in checkpoint file and calculated forces (max = 2.498e-03, rms = 1.538e-03) in 3 min 51.92 s.
+
+Geometry iteration 9
+Computed energy -648.49397393 in 4 min 45.42 s.
+Found    energy -648.49397393 in checkpoint file and calculated forces (max = 4.283e-03, rms = 1.721e-03) in 3 min 52.09 s.
+
+Geometry iteration 10
+Computed energy -648.49407203 in 4 min 45.58 s.
+Found    energy -648.49407203 in checkpoint file and calculated forces (max = 3.235e-03, rms = 1.406e-03) in 3 min 51.55 s.
+Computed energy -648.49404597 in 4 min 45.06 s.
+Computed energy -648.49407752 in 4 min 37.78 s.
+Found    energy -648.49407752 in checkpoint file and calculated forces (max = 3.490e-03, rms = 1.751e-03) in 3 min 51.37 s.
+
+Geometry iteration 11
+Computed energy -648.49414676 in 4 min 44.20 s.
+Found    energy -648.49414676 in checkpoint file and calculated forces (max = 5.257e-03, rms = 1.967e-03) in 3 min 50.58 s.
+Computed energy -648.49415548 in 4 min 37.34 s.
+Found    energy -648.49415548 in checkpoint file and calculated forces (max = 3.416e-03, rms = 1.410e-03) in 3 min 50.83 s.
+
+Geometry iteration 12
+Computed energy -648.49418969 in 4 min 44.10 s.
+Found    energy -648.49418969 in checkpoint file and calculated forces (max = 7.245e-03, rms = 2.716e-03) in 3 min 50.52 s.
+Computed energy -648.49420499 in 4 min 37.45 s.
+Found    energy -648.49420499 in checkpoint file and calculated forces (max = 4.006e-03, rms = 1.676e-03) in 3 min 51.37 s.
+
+Geometry iteration 13
+Computed energy -648.49428046 in 4 min 44.45 s.
+Found    energy -648.49428046 in checkpoint file and calculated forces (max = 2.580e-03, rms = 1.210e-03) in 3 min 50.32 s.
+Computed energy -648.49430928 in 4 min 44.61 s.
+Found    energy -648.49430928 in checkpoint file and calculated forces (max = 3.209e-03, rms = 1.694e-03) in 3 min 50.78 s.
+
+Geometry iteration 14
+Computed energy -648.49437463 in 4 min 43.39 s.
+Found    energy -648.49437463 in checkpoint file and calculated forces (max = 4.916e-03, rms = 2.436e-03) in 3 min 49.80 s.
+Computed energy -648.49438493 in 4 min 35.66 s.
+Found    energy -648.49438493 in checkpoint file and calculated forces (max = 3.108e-03, rms = 1.729e-03) in 3 min 48.55 s.
+
+Geometry iteration 15
+Computed energy -648.49446749 in 4 min 43.70 s.
+Found    energy -648.49446749 in checkpoint file and calculated forces (max = 3.750e-03, rms = 1.561e-03) in 3 min 49.73 s.
+
+Geometry iteration 16
+Computed energy -648.49450761 in 4 min 42.67 s.
+Found    energy -648.49450761 in checkpoint file and calculated forces (max = 5.782e-03, rms = 2.296e-03) in 3 min 49.37 s.
+Computed energy -648.49452175 in 4 min 43.79 s.
+Found    energy -648.49452175 in checkpoint file and calculated forces (max = 3.184e-03, rms = 1.470e-03) in 3 min 49.85 s.
+
+Geometry iteration 17
+Computed energy -648.49459553 in 4 min 28.90 s.
+Found    energy -648.49459553 in checkpoint file and calculated forces (max = 1.858e-03, rms = 1.252e-03) in 3 min 49.95 s.
+Computed energy -648.49459975 in 4 min 29.34 s.
+Found    energy -648.49459975 in checkpoint file and calculated forces (max = 3.673e-03, rms = 2.278e-03) in 3 min 49.82 s.
+Computed energy -648.49460672 in 4 min 35.80 s.
+Found    energy -648.49460672 in checkpoint file and calculated forces (max = 2.585e-03, rms = 1.755e-03) in 3 min 49.78 s.
+
+Geometry iteration 18
+Computed energy -648.49465925 in 4 min 43.68 s.
+Found    energy -648.49465925 in checkpoint file and calculated forces (max = 3.971e-03, rms = 2.047e-03) in 3 min 49.94 s.
+Computed energy -648.49466839 in 4 min 28.02 s.
+Found    energy -648.49466839 in checkpoint file and calculated forces (max = 2.528e-03, rms = 1.403e-03) in 3 min 49.38 s.
+
+Geometry iteration 19
+Computed energy -648.49473987 in 4 min 43.41 s.
+Found    energy -648.49473987 in checkpoint file and calculated forces (max = 2.381e-03, rms = 1.346e-03) in 3 min 49.91 s.
+Computed energy -648.49471143 in 4 min 42.69 s.
+Computed energy -648.49474220 in 4 min 28.54 s.
+Found    energy -648.49474220 in checkpoint file and calculated forces (max = 3.074e-03, rms = 1.606e-03) in 3 min 49.90 s.
+
+Geometry iteration 20
+Computed energy -648.49482180 in 4 min 42.70 s.
+Found    energy -648.49482180 in checkpoint file and calculated forces (max = 4.230e-03, rms = 1.721e-03) in 3 min 49.51 s.
+
+Geometry iteration 21
+Computed energy -648.49488427 in 4 min 42.67 s.
+Found    energy -648.49488427 in checkpoint file and calculated forces (max = 3.659e-03, rms = 1.848e-03) in 3 min 49.80 s.
+Computed energy -648.49488727 in 4 min 28.12 s.
+Found    energy -648.49488727 in checkpoint file and calculated forces (max = 2.383e-03, rms = 1.514e-03) in 3 min 50.15 s.
+
+Geometry iteration 22
+Computed energy -648.49496530 in 4 min 42.41 s.
+Found    energy -648.49496530 in checkpoint file and calculated forces (max = 2.278e-03, rms = 1.482e-03) in 3 min 49.80 s.
+Computed energy -648.49493638 in 4 min 42.53 s.
+Computed energy -648.49496812 in 4 min 48.75 s.
+Found    energy -648.49496812 in checkpoint file and calculated forces (max = 2.804e-03, rms = 1.792e-03) in 3 min 49.54 s.
+
+Geometry iteration 23
+Computed energy -648.49507145 in 4 min 42.57 s.
+Found    energy -648.49507145 in checkpoint file and calculated forces (max = 2.336e-03, rms = 1.335e-03) in 3 min 49.35 s.
+Computed energy -648.49506027 in 4 min 42.23 s.
+Computed energy -648.49508055 in 4 min 42.41 s.
+Found    energy -648.49508055 in checkpoint file and calculated forces (max = 2.885e-03, rms = 1.723e-03) in 3 min 49.65 s.
+
+Geometry iteration 24
+Computed energy -648.49509415 in 4 min 55.96 s.
+Found    energy -648.49509415 in checkpoint file and calculated forces (max = 9.075e-03, rms = 3.531e-03) in 3 min 49.55 s.
+Computed energy -648.49514115 in 4 min 42.28 s.
+Found    energy -648.49514115 in checkpoint file and calculated forces (max = 3.719e-03, rms = 1.716e-03) in 3 min 49.13 s.
+
+Geometry iteration 25
+Computed energy -648.49521814 in 4 min 42.43 s.
+Found    energy -648.49521814 in checkpoint file and calculated forces (max = 1.758e-03, rms = 1.200e-03) in 3 min 49.59 s.
+Computed energy -648.49520747 in 4 min 42.52 s.
+Computed energy -648.49522438 in 4 min 41.89 s.
+Found    energy -648.49522438 in checkpoint file and calculated forces (max = 2.658e-03, rms = 1.501e-03) in 3 min 49.17 s.
+
+Geometry iteration 26
+Computed energy -648.49527495 in 4 min 42.58 s.
+Found    energy -648.49527495 in checkpoint file and calculated forces (max = 5.154e-03, rms = 2.179e-03) in 3 min 49.71 s.
+Computed energy -648.49528419 in 4 min 28.27 s.
+Found    energy -648.49528419 in checkpoint file and calculated forces (max = 3.183e-03, rms = 1.511e-03) in 3 min 49.90 s.
+
+Geometry iteration 27
+Computed energy -648.49534711 in 4 min 43.34 s.
+Found    energy -648.49534711 in checkpoint file and calculated forces (max = 3.314e-03, rms = 1.524e-03) in 3 min 50.34 s.
+
+Geometry iteration 28
+Computed energy -648.49540894 in 4 min 43.44 s.
+Found    energy -648.49540894 in checkpoint file and calculated forces (max = 2.620e-03, rms = 1.470e-03) in 3 min 50.39 s.
+
+Geometry iteration 29
+Computed energy -648.49544251 in 4 min 43.93 s.
+Found    energy -648.49544251 in checkpoint file and calculated forces (max = 3.687e-03, rms = 1.540e-03) in 3 min 51.02 s.
+Computed energy -648.49545138 in 4 min 28.84 s.
+Found    energy -648.49545138 in checkpoint file and calculated forces (max = 1.789e-03, rms = 9.355e-04) in 3 min 50.58 s.
+
+Geometry iteration 30
+Computed energy -648.49542424 in 4 min 44.04 s.
+Computed energy -648.49546742 in 4 min 43.79 s.
+Found    energy -648.49546742 in checkpoint file and calculated forces (max = 1.335e-03, rms = 7.360e-04) in 3 min 50.82 s.
+
+Geometry iteration 31
+Computed energy -648.49548622 in 4 min 43.80 s.
+Found    energy -648.49548622 in checkpoint file and calculated forces (max = 1.761e-03, rms = 7.704e-04) in 3 min 51.09 s.
+Computed energy -648.49547693 in 4 min 44.08 s.
+Computed energy -648.49548650 in 4 min 36.69 s.
+Found    energy -648.49548650 in checkpoint file and calculated forces (max = 2.178e-03, rms = 8.891e-04) in 3 min 51.28 s.
+
+Geometry iteration 32
+Computed energy -648.49550670 in 4 min 44.38 s.
+Found    energy -648.49550670 in checkpoint file and calculated forces (max = 1.779e-03, rms = 8.250e-04) in 3 min 50.32 s.
+
+Geometry iteration 33
+Computed energy -648.49551964 in 4 min 36.18 s.
+Found    energy -648.49551964 in checkpoint file and calculated forces (max = 1.696e-03, rms = 8.896e-04) in 3 min 50.28 s.
+Computed energy -648.49552122 in 4 min 28.72 s.
+Found    energy -648.49552122 in checkpoint file and calculated forces (max = 1.400e-03, rms = 6.447e-04) in 3 min 50.83 s.
+
+Geometry iteration 34
+Computed energy -648.49553109 in 4 min 44.07 s.
+Found    energy -648.49553109 in checkpoint file and calculated forces (max = 1.534e-03, rms = 8.394e-04) in 3 min 51.16 s.
+Computed energy -648.49553242 in 4 min 29.18 s.
+Found    energy -648.49553242 in checkpoint file and calculated forces (max = 1.062e-03, rms = 6.174e-04) in 3 min 51.13 s.
+
+Geometry iteration 35
+Computed energy -648.49554265 in 4 min 36.41 s.
+Found    energy -648.49554265 in checkpoint file and calculated forces (max = 1.321e-03, rms = 6.357e-04) in 3 min 51.15 s.
+
+Geometry iteration 36
+Computed energy -648.49555451 in 4 min 28.40 s.
+Found    energy -648.49555451 in checkpoint file and calculated forces (max = 1.651e-03, rms = 6.793e-04) in 3 min 49.70 s.
+Computed energy -648.49555015 in 4 min 28.50 s.
+Computed energy -648.49555585 in 4 min 29.28 s.
+Found    energy -648.49555585 in checkpoint file and calculated forces (max = 2.186e-03, rms = 8.324e-04) in 3 min 51.39 s.
+
+Geometry iteration 37
+Computed energy -648.49557081 in 4 min 44.64 s.
+Found    energy -648.49557081 in checkpoint file and calculated forces (max = 1.048e-03, rms = 6.269e-04) in 3 min 51.25 s.
+Computed energy -648.49556297 in 4 min 45.18 s.
+Computed energy -648.49557108 in 4 min 44.99 s.
+Found    energy -648.49557108 in checkpoint file and calculated forces (max = 1.443e-03, rms = 7.186e-04) in 3 min 51.08 s.
+
+Geometry iteration 38
+Computed energy -648.49558772 in 4 min 30.69 s.
+Found    energy -648.49558772 in checkpoint file and calculated forces (max = 1.122e-03, rms = 5.957e-04) in 3 min 51.91 s.
+
+Geometry iteration 39
+Computed energy -648.49558309 in 4 min 45.43 s.
+Computed energy -648.49559537 in 4 min 44.82 s.
+Found    energy -648.49559537 in checkpoint file and calculated forces (max = 9.366e-04, rms = 4.577e-04) in 3 min 51.84 s.
+
+Geometry iteration 40
+Computed energy -648.49559785 in 4 min 45.78 s.
+Found    energy -648.49559785 in checkpoint file and calculated forces (max = 1.933e-03, rms = 7.865e-04) in 3 min 52.68 s.
+Computed energy -648.49559944 in 4 min 30.49 s.
+Found    energy -648.49559944 in checkpoint file and calculated forces (max = 8.407e-04, rms = 4.398e-04) in 3 min 51.84 s.
+
+Geometry iteration 41
+Computed energy -648.49560544 in 4 min 31.06 s.
+Found    energy -648.49560544 in checkpoint file and calculated forces (max = 6.354e-04, rms = 3.807e-04) in 3 min 52.23 s.
+Computed energy -648.49560627 in 4 min 31.55 s.
+Found    energy -648.49560627 in checkpoint file and calculated forces (max = 1.130e-03, rms = 6.089e-04) in 3 min 51.88 s.
+Computed energy -648.49560652 in 4 min 30.88 s.
+Found    energy -648.49560652 in checkpoint file and calculated forces (max = 8.461e-04, rms = 4.820e-04) in 3 min 52.15 s.
+Computed energy -648.49560663 in 4 min 16.73 s.
+Found    energy -648.49560663 in checkpoint file and calculated forces (max = 9.190e-04, rms = 5.124e-04) in 3 min 51.56 s.
+
+Geometry iteration 42
+Computed energy -648.49561277 in 4 min 44.33 s.
+Found    energy -648.49561277 in checkpoint file and calculated forces (max = 1.193e-03, rms = 5.716e-04) in 3 min 51.87 s.
+Computed energy -648.49561302 in 4 min 30.85 s.
+Found    energy -648.49561302 in checkpoint file and calculated forces (max = 1.051e-03, rms = 4.982e-04) in 3 min 52.33 s.
+
+Geometry iteration 43
+Computed energy -648.49561904 in 4 min 30.66 s.
+Found    energy -648.49561904 in checkpoint file and calculated forces (max = 9.428e-04, rms = 5.284e-04) in 3 min 52.25 s.
+
+Geometry iteration 44
+Computed energy -648.49562650 in 4 min 30.59 s.
+Found    energy -648.49562650 in checkpoint file and calculated forces (max = 7.976e-04, rms = 4.500e-04) in 3 min 52.30 s.
+Computed energy -648.49530633 in 4 min 45.07 s.
+Computed energy -648.49562739 in 4 min 45.32 s.
+Found    energy -648.49562739 in checkpoint file and calculated forces (max = 1.475e-03, rms = 6.197e-04) in 3 min 51.92 s.
+
+Geometry iteration 45
+Computed energy -648.49563505 in 4 min 38.45 s.
+Found    energy -648.49563505 in checkpoint file and calculated forces (max = 9.903e-04, rms = 4.881e-04) in 3 min 52.02 s.
+Computed energy -648.49563513 in 4 min 16.94 s.
+Found    energy -648.49563513 in checkpoint file and calculated forces (max = 8.395e-04, rms = 4.395e-04) in 3 min 52.58 s.
+
+Geometry iteration 46
+Computed energy -648.49563734 in 4 min 30.49 s.
+Found    energy -648.49563734 in checkpoint file and calculated forces (max = 1.296e-03, rms = 6.803e-04) in 3 min 52.19 s.
+Computed energy -648.49563957 in 4 min 30.82 s.
+Found    energy -648.49563957 in checkpoint file and calculated forces (max = 5.956e-04, rms = 3.551e-04) in 3 min 52.23 s.
+
+Geometry iteration 47
+Computed energy -648.49564406 in 4 min 44.61 s.
+Found    energy -648.49564406 in checkpoint file and calculated forces (max = 6.631e-04, rms = 3.509e-04) in 3 min 52.54 s.
+
+Geometry iteration 48
+Computed energy -648.49564707 in 4 min 37.61 s.
+Found    energy -648.49564707 in checkpoint file and calculated forces (max = 1.286e-03, rms = 5.476e-04) in 3 min 51.90 s.
+Computed energy -648.49564749 in 4 min 16.49 s.
+Found    energy -648.49564749 in checkpoint file and calculated forces (max = 9.419e-04, rms = 4.093e-04) in 3 min 52.07 s.
+
+Geometry iteration 49
+Computed energy -648.49565120 in 4 min 29.98 s.
+Found    energy -648.49565120 in checkpoint file and calculated forces (max = 5.411e-04, rms = 2.976e-04) in 3 min 52.12 s.
+
+Geometry iteration 50
+Computed energy -648.49565323 in 4 min 29.87 s.
+Found    energy -648.49565323 in checkpoint file and calculated forces (max = 9.920e-04, rms = 4.207e-04) in 3 min 51.58 s.
+Computed energy -648.49565416 in 4 min 23.50 s.
+Found    energy -648.49565416 in checkpoint file and calculated forces (max = 5.127e-04, rms = 2.791e-04) in 3 min 43.89 s.
+
+Geometry iteration 51
+Computed energy -648.49565465 in 4 min 21.21 s.
+Found    energy -648.49565465 in checkpoint file and calculated forces (max = 1.280e-03, rms = 5.173e-04) in 3 min 43.97 s.
+Computed energy -648.49565513 in 4 min 21.10 s.
+Found    energy -648.49565513 in checkpoint file and calculated forces (max = 5.325e-04, rms = 2.442e-04) in 3 min 43.77 s.
+Computed energy -648.49565518 in 4 min 21.56 s.
+Found    energy -648.49565518 in checkpoint file and calculated forces (max = 7.291e-04, rms = 3.080e-04) in 3 min 44.65 s.
+
+Geometry iteration 52
+Computed energy -648.49565682 in 4 min 21.17 s.
+Found    energy -648.49565682 in checkpoint file and calculated forces (max = 3.888e-04, rms = 2.251e-04) in 3 min 43.68 s.
+Computed energy -648.49565769 in 4 min 21.24 s.
+Found    energy -648.49565769 in checkpoint file and calculated forces (max = 5.178e-04, rms = 3.064e-04) in 3 min 43.81 s.
+
+Geometry iteration 53
+Computed energy -648.49565984 in 4 min 21.31 s.
+Found    energy -648.49565984 in checkpoint file and calculated forces (max = 5.158e-04, rms = 3.101e-04) in 3 min 43.78 s.
+Computed energy -648.49565988 in 4 min 7.64 s.
+Found    energy -648.49565988 in checkpoint file and calculated forces (max = 4.726e-04, rms = 2.688e-04) in 3 min 43.79 s.
+
+Geometry iteration 54
+Computed energy -648.49566168 in 4 min 21.14 s.
+Found    energy -648.49566168 in checkpoint file and calculated forces (max = 4.667e-04, rms = 3.156e-04) in 3 min 43.72 s.
+Computed energy -648.49566177 in 4 min 7.59 s.
+Found    energy -648.49566177 in checkpoint file and calculated forces (max = 3.543e-04, rms = 2.585e-04) in 3 min 43.84 s.
+
+Geometry iteration 55
+Computed energy -648.49566371 in 4 min 21.23 s.
+Found    energy -648.49566371 in checkpoint file and calculated forces (max = 4.443e-04, rms = 2.368e-04) in 3 min 43.73 s.
+
+Geometry iteration 56
+Computed energy -648.49566570 in 4 min 21.32 s.
+Found    energy -648.49566570 in checkpoint file and calculated forces (max = 4.427e-04, rms = 2.280e-04) in 3 min 43.87 s.
+
+Geometry iteration 57
+Computed energy -648.49566729 in 4 min 21.25 s.
+Found    energy -648.49566729 in checkpoint file and calculated forces (max = 3.572e-04, rms = 1.997e-04) in 3 min 43.70 s.
+Computed energy -648.49566736 in 4 min 7.65 s.
+Found    energy -648.49566736 in checkpoint file and calculated forces (max = 2.827e-04, rms = 1.713e-04) in 3 min 43.67 s.
+
+Geometry iteration 58
+Computed energy -648.49566710 in 4 min 21.11 s.
+Computed energy -648.49566820 in 4 min 21.07 s.
+Found    energy -648.49566820 in checkpoint file and calculated forces (max = 3.561e-04, rms = 1.818e-04) in 3 min 43.64 s.
+Running program took 15 h 32 min 31.56 s.
