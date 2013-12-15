@@ -1,0 +1,174 @@
+nohup: ignoring input
+ERKALE - Geometry optimization from Hel, serial version.
+(c) Susi Lehtola, 2010-2013.
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+Current time is Sat 16 Nov 2013 09:52:42.
+
+Current Settings used by ERKALE:
+     AtomGuess      	                Auto	Method used for atomic guess (Auto for same as method)
+     Basis          	               6-31G	Basis set used in calculation
+     BasisOrth      	                Auto	Method of orthonormalization of basis set
+     C1-DIIS        	               false	Use older version of DIIS (C1-DIIS instead of C2-DIIS)?
+     Charge         	                   0	Total charge of system
+     Criterion      	              NORMAL	Convergence criterion to use: LOOSE, NORMAL, TIGHT, VERYTIGHT
+     DIISOrder      	                  10	How many DIIS iterations to keep in memory?
+     DIISThr        	           5.000e-02	DIIS error threshold for DIIS updates
+     DecFock        	               false	Use decontracted basis to calculate Fock matrix (direct HF)
+     Decontract     	                    	Indices of atoms to decontract basis set for
+     DeltaEmax      	           1.000e-06	Maximum allowed change of energy
+     DeltaPmax      	           1.000e-06	Maximum allowed maximum difference of density matrix
+     DeltaPrms      	           1.000e-08	Maximum allowed RMS difference of density matrix
+     DensityFitting 	               false	Use density fitting / RI?
+     Direct         	               false	Calculate two-electron integrals (or density fitting) on-the-fly?
+     FittingBasis   	                Auto	Basis to use for density fitting / RI (Auto for automatic)
+     FittingMemory  	                1000	Amount of memory in MB to use for exchange fitting
+     FittingThreshold	           1.000e-08	Linear dependence threshold for Coulomb integrals in density fitting
+     ForcePol       	               false	Force polarized calculation
+     FreezeCore     	               false	Freeze the atomic cores?
+     Guess          	              Atomic	Used guess: atomic (default), molecular, or core
+     LineSearch     	               false	Do line search in level shift (EXPENSIVE!)
+     LoadChk        	                    	File to load old results from
+     Logfile        	     erkale_geom.log	File to print out full information, stdout for screen
+     MaxIter        	                 100	Maximum number of iterations in SCF cycle
+     MaxSteps       	                 256	Maximum amount of geometry steps
+     Method         	                  HF	Method used in calculation (HF or a DFT functional)
+     Multiplicity   	                   1	Spin multiplicity
+     Occupancies    	                    	Orbital occupancies
+     OptMovie       	        optimize.xyz	xyz movie to store progress in
+     Optimizer      	               BFGS2	Optimizer to use: CGFR, CGPR, BFGS, BFGS2 (default), SD
+     Result         	       optimized.xyz	File to save optimized geometry in
+     SaveChk        	          erkale.chk	File to use as checkpoint
+     Shift          	           0.000e+00	Level shift to use in Hartree
+     StrictIntegrals	               false	Use strict integrals?
+     System         	           atoms.xyz	System as an xyz file
+     UseADIIS       	                true	Use ADIIS for Fock matrix interpolation? (DIIS takes preference)
+     UseBroyden     	               false	Use Broyden mixing of Fock matrices?
+     UseDIIS        	                true	Use Pulay's Direct Inversion in the Iterative Subspace?
+     UseLM          	                true	Use a spherical harmonics basis set by default?
+     UseTRDSM       	               false	Use Trust-Region DSM?
+     UseTRRH        	               false	Use Trust-Region Roothaan-Hall?
+     Verbose        	                true	Verbose calculation?
+
+
+Calculating initial atomic guess ... done (0.20 s)
+
+Running restricted HF calculation.
+iter                E         dE   RMS dens   MAX dens   dip mom  titer (s)
+   1    -641.47254483 -6.415e+02  4.223e-02  6.411e-01     1.360      3.063
+   2    -643.76640069 -2.294e+00  2.906e-02  7.191e-01     2.526      3.067
+   3    -644.18906316 -4.227e-01  1.331e-02  3.164e-01     0.737      3.057
+   4    -644.62665166 -4.376e-01  5.869e-03  1.196e-01     1.536      3.058
+   5    -644.63649950 -9.848e-03  2.841e-03  6.436e-02     1.057      3.067
+   6    -644.66065362 -2.415e-02  5.277e-04  8.430e-03     1.120      3.063
+   7    -644.66118745 -5.338e-04  8.474e-05  1.815e-03     1.114      3.073
+   8    -644.66120134 -1.388e-05  3.433e-05  5.508e-04     1.117      3.077
+   9    -644.66120319 -1.852e-06  1.213e-05  3.189e-04     1.116      3.086
+  10    -644.66120355 -3.604e-07* 7.315e-06  1.511e-04     1.116      3.094
+  11    -644.66120362 -6.493e-08* 2.738e-06  5.398e-05     1.116      3.081
+  12    -644.66120363 -8.935e-09* 9.543e-07  1.348e-05     1.116      3.086
+  13    -644.66120363 -1.022e-09* 2.807e-07  3.904e-06     1.116      3.064
+  14    -644.66120363 -1.919e-10* 1.105e-07  1.267e-06     1.116      3.065
+  15    -644.66120363 -2.001e-11* 4.023e-08  5.069e-07*    1.116      3.060
+  16    -644.66120363 -3.638e-12* 2.391e-08  2.895e-07*    1.116      3.068
+  17    -644.66120363 -1.364e-12* 9.005e-09* 9.449e-08*    1.116      3.072
+  18    -644.66120363  0.000e+00* 3.012e-09* 5.410e-08*    1.116      3.071
+RHF converged in 55.32 s.
+Geometry optimizer initialized in 4 min 58.30 s.
+Entering minimization loop with BFGS2 optimizer.
+iter                E         dE  dE/dEproj  disp max  disp rms     f max     f rms titer
+   1    -644.66869765 -7.494e-03  5.101e-01 6.577e-02  3.174e-02  2.775e-02  1.349e-02  9 min 26.76 s
+   2    -644.67103154 -2.334e-03  4.990e-01 4.678e-02  1.934e-02  1.944e-02  6.973e-03  6 min 58.27 s
+   3    -644.67166063 -6.291e-04  5.080e-01 2.070e-02  9.969e-03  1.271e-02  5.399e-03  6 min 53.07 s
+   4    -644.67243032 -7.697e-04  4.981e-01 4.240e-02  1.855e-02  1.044e-02  4.832e-03  11 min 31.61 s
+   5    -644.67281346 -3.831e-04  4.979e-01 3.031e-02  1.177e-02  5.195e-03  3.316e-03  6 min 47.52 s
+   6    -644.67300093 -1.875e-04  5.018e-01 2.035e-02  7.855e-03  6.811e-03  2.863e-03  6 min 47.13 s
+   7    -644.67318223 -1.813e-04  4.835e-01 2.088e-02  1.008e-02  5.425e-03  2.096e-03  4 min 43.60 s
+   8    -644.67324089 -5.866e-05  4.949e-01 7.977e-03  3.897e-03  3.745e-03  1.741e-03  6 min 47.27 s
+   9    -644.67333536 -9.447e-05  4.999e-01 1.449e-02  8.124e-03  2.971e-03  1.692e-03  13 min 58.77 s
+  10    -644.67344533 -1.100e-04  4.988e-01 2.425e-02  1.143e-02  3.528e-03  1.901e-03  11 min 26.31 s
+  11    -644.67352860 -8.328e-05  4.999e-01 2.209e-02  9.596e-03  4.881e-03  2.299e-03  9 min 20.17 s
+  12    -644.67363400 -1.054e-04  4.991e-01 2.984e-02  1.291e-02  3.398e-03  2.010e-03  11 min 25.63 s
+  13    -644.67371620 -8.220e-05  5.007e-01 2.460e-02  1.076e-02  3.614e-03  2.136e-03  9 min 19.46 s
+  14    -644.67391012 -1.939e-04  4.984e-01 6.056e-02  2.699e-02  4.901e-03  2.840e-03  9 min 19.85 s
+  15    -644.67410812 -1.980e-04  5.106e-01 6.113e-02  2.750e-02  6.067e-03  2.803e-03  4 min 42.50 s
+  16    -644.67428787 -1.797e-04  5.023e-01 5.943e-02  2.718e-02  4.504e-03  2.300e-03  9 min 17.80 s
+  17    -644.67441202 -1.241e-04  4.993e-01 3.885e-02  1.862e-02  5.727e-03  2.538e-03  9 min 21.16 s
+  18    -644.67454337 -1.314e-04  5.290e-01 3.933e-02  1.918e-02  5.166e-03  2.291e-03  4 min 41.66 s
+  19    -644.67465287 -1.095e-04  4.985e-01 3.907e-02  1.926e-02  3.388e-03  2.069e-03  9 min 17.22 s
+  20    -644.67481688 -1.640e-04  5.033e-01 5.624e-02  2.770e-02  3.769e-03  2.034e-03  11 min 21.72 s
+  21    -644.67489162 -7.474e-05  4.989e-01 2.714e-02  1.316e-02  5.737e-03  2.323e-03  6 min 44.07 s
+  22    -644.67501496 -1.233e-04  5.011e-01 4.446e-02  2.219e-02  3.151e-03  1.942e-03  13 min 52.26 s
+  23    -644.67511198 -9.702e-05  4.989e-01 3.487e-02  1.863e-02  3.122e-03  1.820e-03  9 min 18.00 s
+  24    -644.67519379 -8.181e-05  5.013e-01 2.874e-02  1.633e-02  3.787e-03  1.758e-03  9 min 18.10 s
+  25    -644.67524590 -5.211e-05  5.000e-01 1.839e-02  1.075e-02  3.390e-03  1.502e-03  9 min 21.66 s
+  26    -644.67530106 -5.516e-05  5.292e-01 1.935e-02  1.124e-02  3.312e-03  1.612e-03  4 min 39.59 s
+  27    -644.67536558 -6.452e-05  5.001e-01 2.776e-02  1.568e-02  3.525e-03  1.399e-03  11 min 19.22 s
+  28    -644.67540469 -3.911e-05  5.009e-01 1.638e-02  8.927e-03  2.724e-03  1.259e-03  9 min 21.61 s
+  29    -644.67543534 -3.065e-05  5.005e-01 1.334e-02  7.324e-03  1.631e-03  9.637e-04  9 min 18.03 s
+  30    -644.67545117 -1.583e-05  4.998e-01 7.445e-03  4.082e-03  1.441e-03  7.361e-04  9 min 17.16 s
+  31    -644.67545968 -8.508e-06  5.002e-01 4.509e-03  2.449e-03  9.975e-04  6.777e-04  9 min 18.18 s
+  32    -644.67547569 -1.601e-05  4.705e-01 1.020e-02  5.457e-03  1.285e-03  8.171e-04  9 min 14.91 s
+  33    -644.67549103 -1.534e-05  4.792e-01 9.180e-03  4.735e-03  1.333e-03  7.859e-04  4 min 37.84 s
+  34    -644.67550297 -1.194e-05  4.999e-01 7.592e-03  3.758e-03  1.632e-03  8.790e-04  9 min 12.19 s
+  35    -644.67552131 -1.834e-05  4.996e-01 1.296e-02  6.274e-03  1.700e-03  8.368e-04  13 min 50.15 s
+  36    -644.67553801 -1.670e-05  4.550e-01 1.374e-02  6.590e-03  2.079e-03  9.514e-04  4 min 39.94 s
+  37    -644.67555572 -1.771e-05  5.304e-01 1.059e-02  5.144e-03  1.792e-03  8.799e-04  4 min 37.71 s
+  38    -644.67557827 -2.256e-05  4.992e-01 1.790e-02  8.535e-03  1.620e-03  9.263e-04  11 min 21.74 s
+  39    -644.67559108 -1.281e-05  5.002e-01 9.663e-03  4.646e-03  1.461e-03  7.929e-04  9 min 18.48 s
+  40    -644.67560351 -1.242e-05  4.849e-01 1.007e-02  4.894e-03  1.491e-03  6.723e-04  4 min 38.01 s
+  41    -644.67561431 -1.080e-05  5.002e-01 8.055e-03  4.083e-03  1.180e-03  6.700e-04  9 min 10.00 s
+  42    -644.67562239 -8.087e-06  4.997e-01 6.595e-03  3.357e-03  1.180e-03  6.242e-04  9 min 12.92 s
+  43    -644.67562884 -6.449e-06  4.998e-01 5.704e-03  2.848e-03  7.801e-04  4.535e-04  9 min 10.21 s
+  44    -644.67563381 -4.967e-06  5.004e-01 5.211e-03  2.430e-03  8.605e-04  5.026e-04  9 min 9.63 s
+  45    -644.67564101 -7.205e-06  5.002e-01 8.472e-03  3.775e-03  1.024e-03  5.235e-04  11 min 11.32 s
+  46    -644.67564486 -3.846e-06  5.000e-01 4.718e-03  2.133e-03  9.708e-04  4.344e-04  9 min 15.98 s
+  47    -644.67564917 -4.306e-06  5.002e-01 5.476e-03  2.566e-03  7.407e-04  3.904e-04  11 min 13.76 s
+  48    -644.67565197 -2.804e-06  5.002e-01 3.573e-03  1.806e-03  6.495e-04  3.320e-04  9 min 9.82 s
+  49    -644.67565386 -1.895e-06  5.000e-01 2.119e-03  1.336e-03  4.367e-04* 2.845e-04* 9 min 9.90 s
+  50    -644.67565684 -2.973e-06  5.000e-01 4.120e-03  2.322e-03  7.679e-04  4.248e-04  13 min 42.91 s
+  51    -644.67565992 -3.088e-06  5.194e-01 4.471e-03  2.415e-03  5.660e-04  3.442e-04  4 min 38.22 s
+  52    -644.67566228 -2.353e-06  4.996e-01 4.260e-03  2.166e-03  3.984e-04* 2.534e-04* 9 min 10.33 s
+  53    -644.67566371 -1.434e-06  4.999e-01 2.943e-03  1.382e-03  5.580e-04  2.829e-04* 9 min 10.31 s
+  54    -644.67566512 -1.409e-06  4.913e-01 3.374e-03  1.466e-03  5.058e-04  2.658e-04* 4 min 37.70 s
+  55    -644.67566691 -1.786e-06  4.993e-01 4.611e-03  1.887e-03  5.828e-04  2.538e-04* 11 min 1.88 s
+  56    -644.67566853 -1.627e-06  4.556e-01 5.086e-03  2.040e-03  6.724e-04  3.184e-04  4 min 35.09 s
+  57    -644.67567035 -1.818e-06  4.995e-01 4.408e-03  1.814e-03  4.426e-04* 2.691e-04* 11 min 4.85 s
+  58    -644.67567189 -1.542e-06  4.993e-01 4.211e-03  1.747e-03  4.905e-04  2.961e-04* 9 min 9.73 s
+  59    -644.67567366 -1.767e-06  4.995e-01 5.078e-03  2.083e-03  6.660e-04  2.819e-04* 11 min 10.73 s
+  60    -644.67567536 -1.695e-06  4.796e-01 5.124e-03  2.161e-03  7.345e-04  3.055e-04  4 min 34.48 s
+  61    -644.67567764 -2.288e-06  4.998e-01 6.124e-03  2.682e-03  6.488e-04  3.225e-04  11 min 9.35 s
+  62    -644.67567934 -1.698e-06  4.996e-01 4.751e-03  2.122e-03  5.418e-04  2.643e-04* 9 min 10.08 s
+  63    -644.67568039 -1.052e-06  4.998e-01 3.227e-03  1.369e-03  4.707e-04  2.102e-04* 9 min 10.15 s
+  64    -644.67568166 -1.269e-06  4.998e-01 4.511e-03  1.751e-03  5.841e-04  2.426e-04* 11 min 4.70 s
+  65    -644.67568257 -9.099e-07  5.001e-01 3.506e-03  1.305e-03  4.328e-04* 2.287e-04* 9 min 6.51 s
+  66    -644.67568403 -1.457e-06  5.002e-01 6.028e-03  2.176e-03  4.993e-04  2.600e-04* 13 min 41.76 s
+  67    -644.67568537 -1.342e-06  4.606e-01 6.253e-03  2.241e-03  5.687e-04  2.648e-04* 4 min 37.58 s
+  68    -644.67568626 -8.889e-07  5.002e-01 3.201e-03  1.176e-03* 3.452e-04* 1.761e-04* 9 min 7.37 s
+  69    -644.67568693 -6.745e-07  5.004e-01 2.439e-03  9.726e-04* 3.691e-04* 2.198e-04* 9 min 7.05 s
+  70    -644.67568807 -1.136e-06  4.992e-01 4.098e-03  1.713e-03  4.460e-04* 2.299e-04* 13 min 38.78 s
+  71    -644.67568945 -1.383e-06  4.998e-01 5.087e-03  2.164e-03  5.289e-04  2.690e-04* 11 min 5.01 s
+  72    -644.67569054 -1.087e-06  4.996e-01 4.128e-03  1.747e-03  3.882e-04* 2.400e-04* 9 min 10.13 s
+  73    -644.67569168 -1.143e-06  5.259e-01 4.322e-03  1.794e-03  3.657e-04* 1.851e-04* 4 min 35.06 s
+  74    -644.67569251 -8.260e-07  5.006e-01 4.044e-03  1.607e-03  5.303e-04  2.099e-04* 9 min 11.13 s
+  75    -644.67569312 -6.118e-07  5.001e-01 3.142e-03  1.200e-03  3.010e-04* 1.659e-04* 9 min 9.98 s
+  76    -644.67569389 -7.701e-07  4.997e-01 4.366e-03  1.568e-03  3.738e-04* 1.816e-04* 11 min 4.69 s
+  77    -644.67569446 -5.668e-07  4.988e-01 3.365e-03  1.192e-03* 2.970e-04* 1.734e-04* 9 min 9.03 s
+  78    -644.67569514 -6.797e-07  5.002e-01 4.132e-03  1.472e-03  3.390e-04* 1.839e-04* 11 min 2.21 s
+  79    -644.67569571 -5.725e-07  5.000e-01 3.523e-03  1.274e-03  2.770e-04* 1.497e-04* 9 min 4.73 s
+  80    -644.67569626 -5.557e-07  4.853e-01 3.510e-03  1.324e-03  3.780e-04* 1.911e-04* 4 min 35.09 s
+  81    -644.67569701 -7.449e-07  5.008e-01 4.281e-03  1.680e-03  3.567e-04* 1.914e-04* 11 min 2.28 s
+  82    -644.67569778 -7.713e-07  5.178e-01 4.337e-03  1.757e-03  4.305e-04* 2.016e-04* 4 min 34.92 s
+  83    -644.67569868 -8.945e-07  5.003e-01 5.468e-03  2.263e-03  3.695e-04* 1.978e-04* 11 min 5.57 s
+  84    -644.67569938 -7.021e-07  5.004e-01 4.262e-03  1.770e-03  2.770e-04* 1.469e-04* 9 min 4.44 s
+  85    -644.67569974 -3.647e-07  5.000e-01 2.289e-03  9.474e-04* 3.153e-04* 1.632e-04* 9 min 7.78 s
+  86    -644.67570034 -5.929e-07  5.005e-01 3.820e-03  1.572e-03  2.194e-04* 1.236e-04* 13 min 34.44 s
+  87    -644.67570070 -3.615e-07  5.002e-01 2.503e-03  9.973e-04* 3.011e-04* 1.343e-04* 9 min 7.67 s
+  88    -644.67570096 -2.588e-07  5.004e-01 1.876e-03  7.360e-04* 2.027e-04* 1.107e-04* 9 min 7.00 s
+  89    -644.67570123 -2.714e-07  5.243e-01 1.962e-03  7.684e-04* 2.027e-04* 9.327e-05* 4 min 32.55 s
+  90    -644.67570139 -1.624e-07  5.001e-01 1.425e-03* 5.640e-04* 1.624e-04* 9.455e-05* 9 min 3.73 s
+Converged.
