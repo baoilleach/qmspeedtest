@@ -34,7 +34,7 @@ Baoilleach's results
 <tr>
 <td>erkale</td><td>933</td>
 <td>58</td><td>16.1</td>
-<td>-686.49566820</td>
+<td>-648.49566820</td>
 <td>-0.260899</td>
 <td>-0.064457</td>
 </tr>
