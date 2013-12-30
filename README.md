@@ -1,7 +1,7 @@
 qmspeedtest
 ===========
 
-Quantum Chemistry speed test. Note that it must only use a single CPU.
+Quantum Chemistry speed test. Note that it must only use a single CPU. And please, no Gaussian results.
 
 Baoilleach's results
 --------------------
