@@ -50,7 +50,7 @@ Baoilleach's results
 <td>19</td><td>0.9</td>
 <td>-648.49569450</td>
 <td>-0.2605941</td>
-<td>0.06439398</td>
+<td>-0.06439398</td>
 </tr>
 </table>
 
