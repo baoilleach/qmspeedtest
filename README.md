@@ -74,6 +74,13 @@ Karol Langner's results
 <td>-0.3536105</td>
 <td>0.07435037</td>
 </tr>
+<tr>
+<td>GAMESS-US 1 May 2012 (R1)</td><td>8</td>
+<td>30</td><td>0.26</td>
+<td>-644.6757056212</td>
+<td>-0.3536</td>
+<td>0.0744</td>
+</tr>
 </table>
 
 ### B3LYP
@@ -88,5 +95,48 @@ Karol Langner's results
 <td>-648.49569416</td>
 <td>-0.2605694</td>
 <td>-0.06439231</td>
+</tr>
+<td>GAMESS-US 1 May 2012 (R1)</td><td>124</td>
+<td>41</td><td>3.04</td>
+<td>-648.1465175955</td>
+<td>-0.2567</td>
+<td>-0.0607</td>
+</tr>
+</table>
+
+MY NAME HERE's results
+----------------------
+
+**Machine:** Description of one CPU and the OS
+
+**Fancy compiler or maths libraries used when compiling:** Intel compiler? MKL?
+
+### HF
+<table>
+<tr>
+<th>QM Package</th><th>Time (min)</th><th>Steps</th><th>per step</th>
+<th>Total E</th><th>HOMO</th><th>LUMO</th>
+</tr>
+<tr>
+<td></td><td></td>
+<td></td><td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+### B3LYP
+<table>
+<tr>
+<th>QM Package</th><th>Time (min)</th><th>Steps</th><th>per step</th>
+<th>Total E</th><th>HOMO</th><th>LUMO</th>
+</tr>
+<tr>
+<td></td><td></td>
+<td></td><td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </table>
