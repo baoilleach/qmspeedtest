@@ -54,12 +54,12 @@ Baoilleach's results
 </tr>
 </table>
 
-MY NAME HERE's results
+Karol Langner's results
 ----------------------
 
-**Machine:** Description of one CPU and the OS
+**Machine:** Intel(R) Core2 Quad Q9550 @2.83GHz with 8GB DDR2 RAM, running Debian 7 (Wheezy)
 
-**Fancy compiler or maths libraries used when compiling:** Intel compiler? MKL?
+**Fancy compiler or maths libraries used when compiling:** Standard Debian packages for NWChem
 
 ### HF
 <table>
@@ -68,11 +68,11 @@ MY NAME HERE's results
 <th>Total E</th><th>HOMO</th><th>LUMO</th>
 </tr>
 <tr>
-<td></td><td></td>
-<td></td><td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>NWChem 6.1</td><td>30 (13 for CPU)</td>
+<td>19</td><td>1.7</td>
+<td>-644.67570661</td>
+<td>-0.3536105</td>
+<td>0.07435037</td>
 </tr>
 </table>
 
@@ -83,10 +83,10 @@ MY NAME HERE's results
 <th>Total E</th><th>HOMO</th><th>LUMO</th>
 </tr>
 <tr>
-<td></td><td></td>
-<td></td><td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>NWChem 6.1</td><td>42</td>
+<td>26</td><td>1.6</td>
+<td>-648.49569416</td>
+<td>-0.2605694</td>
+<td>-0.06439231</td>
 </tr>
 </table>
