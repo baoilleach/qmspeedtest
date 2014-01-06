@@ -82,6 +82,13 @@ Karol Langner's results
 <td>0.0744</td>
 </tr>
 <tr>
+<td>NWChem 6.3 (2013-05-28)</td><td>10</td>
+<td>11</td><td>0.87</td>
+<td>-644.675705246874</td>
+<td>-0.2605703</td>
+<td>-0.074348</td>
+</tr>
+<tr>
 <td>NWChem 6.3 (2013-05-28)</td><td>14</td>
 <td>19</td><td>0.73</td>
 <td>-644.67570661</td>
@@ -118,11 +125,18 @@ Karol Langner's results
 <td>-0.0607</td>
 </tr>
 <tr>
+<td>Molpro 2012.1</td><td>30</td>
+<td>22</td><td>1.34</td>
+<td>-644.146626995532</td>
+<td>-0.257339</td>
+<td>0.07435040</td>
+</tr>
+<tr>
 <td>NWChem 6.3 (2013-05-28)</td><td>42</td>
 <td>26</td><td>1.6</td>
 <td>-648.49569417</td>
 <td>-0.2605703</td>
-<td>-0.06439253</td>
+<td>-0.061160</td>
 </tr>
 <tr>
 <td>Orca 2.9.1</td><td>26</td>
