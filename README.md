@@ -57,9 +57,9 @@ Baoilleach's results
 Karol Langner's results
 ----------------------
 
-**Machine:** Intel(R) Core2 Quad Q9550 @2.83GHz with 8GB DDR2 RAM, running Debian 7 (Wheezy)
+**Machine:** Intel Xeon X5650 @2.67 GHz
 
-**Fancy compiler or maths libraries used when compiling:** Standard Debian packages for NWChem
+**Fancy compiler or maths libraries used when compiling:** Intel libraries in some cases
 
 ### HF
 <table>
@@ -68,18 +68,18 @@ Karol Langner's results
 <th>Total E</th><th>HOMO</th><th>LUMO</th>
 </tr>
 <tr>
-<td>NWChem 6.1</td><td>30 (13 for CPU)</td>
-<td>19</td><td>1.7</td>
-<td>-644.67570661</td>
-<td>-0.3536105</td>
-<td>0.07435037</td>
-</tr>
-<tr>
-<td>GAMESS-US 1 May 2012 (R1)</td><td>8</td>
-<td>30</td><td>0.26</td>
+<td>GAMESS-US 1 May 2013 (R1)</td><td>6.8</td>
+<td>30</td><td>0.23</td>
 <td>-644.6757056212</td>
 <td>-0.3536</td>
 <td>0.0744</td>
+</tr>
+<tr>
+<td>NWChem 6.3 (2013-05-28)</td><td>14</td>
+<td>19</td><td>0.73</td>
+<td>-644.67570661</td>
+<td>-0.3536105</td>
+<td>0.07435040</td>
 </tr>
 </table>
 
@@ -90,17 +90,18 @@ Karol Langner's results
 <th>Total E</th><th>HOMO</th><th>LUMO</th>
 </tr>
 <tr>
-<td>NWChem 6.1</td><td>42</td>
-<td>26</td><td>1.6</td>
-<td>-648.49569416</td>
-<td>-0.2605694</td>
-<td>-0.06439231</td>
-</tr>
-<td>GAMESS-US 1 May 2012 (R1)</td><td>124</td>
-<td>41</td><td>3.04</td>
+<td>GAMESS-US 1 May 2013 (R1)</td><td>93</td>
+<td>41</td><td>2.27</td>
 <td>-648.1465175955</td>
 <td>-0.2567</td>
 <td>-0.0607</td>
+</tr>
+<tr>
+<td>NWChem 6.3 (2013-05-28)</td><td>42</td>
+<td>26</td><td>1.6</td>
+<td>-648.49569417</td>
+<td>-0.2605703</td>
+<td>-0.06439253</td>
 </tr>
 </table>
 
@@ -109,7 +110,7 @@ MY NAME HERE's results
 
 **Machine:** Description of one CPU and the OS
 
-**Fancy compiler or maths libraries used when compiling:** Intel compiler? MKL?
+**Fancy compiler or maths libraries used when compiling:** Intel libraries in some cases
 
 ### HF
 <table>
