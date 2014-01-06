@@ -1,7 +1,15 @@
-qmspeedtest
-===========
+Quantum Chemistry Speed Test
+============================
 
-Quantum Chemistry speed test. Note that it must only use a single CPU. And please, no Gaussian results.
+**The rules**: Calculations must only use a single CPU. The B3LYP used should be that used by default by Gaussian and NWChem (namely the VWN3 not VWN5). And please, no Gaussian input files or results.
+
+Various people have submitted results:
+- [Eric Berquist](http://github.com/berky/qmspeedtest)
+- [Michael Banck](http://github.com/mbanck/qmspeedtest)
+- [Noel O'Boyle](http://github.com/baoilleach/qmspeedtest)
+- [Pedro Silva](http://github.com/PedroJSilva/qmspeedtest)
+
+Please fork the [original repo](http://github.com/baoilleach/qmspeedtest) and submit your own!
 
 Baoilleach's results
 --------------------
