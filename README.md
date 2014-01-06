@@ -68,6 +68,13 @@ Karol Langner's results
 <th>Total E</th><th>HOMO</th><th>LUMO</th>
 </tr>
 <tr>
+<td>Dalton 2011.0</td><td>31</td>
+<td>25</td><td>1.24</td>
+<td>-644.675706219317</td>
+<td>-0.35364617</td>
+<td>0.07433145</td>
+</tr>
+<tr>
 <td>GAMESS-US 1 May 2013 (R1)</td><td>6.8</td>
 <td>30</td><td>0.23</td>
 <td>-644.6757056212</td>
@@ -90,6 +97,13 @@ Karol Langner's results
 <th>Total E</th><th>HOMO</th><th>LUMO</th>
 </tr>
 <tr>
+<td>Dalton 2011.0</td><td>95</td>
+<td>23</td><td>3.65</td>
+<td>-648.1465177870</td>
+<td>-0.25713095</td>
+<td>-0.06101129</td>
+</tr>
+<tr>
 <td>GAMESS-US 1 May 2013 (R1)</td><td>93</td>
 <td>41</td><td>2.27</td>
 <td>-648.1465175955</td>
@@ -110,7 +124,7 @@ MY NAME HERE's results
 
 **Machine:** Description of one CPU and the OS
 
-**Fancy compiler or maths libraries used when compiling:** Intel libraries in some cases
+**Fancy compiler or maths libraries used when compiling:** Intel compiler? MKL?
 
 ### HF
 <table>
