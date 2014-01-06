@@ -88,6 +88,13 @@ Karol Langner's results
 <td>-0.3536105</td>
 <td>0.07435040</td>
 </tr>
+<tr>
+<td>Orca 2.9.1</td><td>19</td>
+<td>6</td><td>3.17</td>
+<td>-644.67570604</td>
+<td>-0.353622</td>
+<td>0.074344</td>
+</tr>
 </table>
 
 ### B3LYP
@@ -116,6 +123,13 @@ Karol Langner's results
 <td>-648.49569417</td>
 <td>-0.2605703</td>
 <td>-0.06439253</td>
+</tr>
+<tr>
+<td>Orca 2.9.1</td><td>26</td>
+<td>8</td><td>3.25</td>
+<td>-648.49562135</td>
+<td>-0.260530</td>
+<td>-0.064412</td>
 </tr>
 </table>
 
