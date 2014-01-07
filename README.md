@@ -82,7 +82,7 @@ Karol Langner's results
 <td>0.0744</td>
 </tr>
 <tr>
-<td>NWChem 6.3 (2013-05-28)</td><td>10</td>
+<td>Molpro 2012.1</td><td>10</td>
 <td>11</td><td>0.87</td>
 <td>-644.675705246874</td>
 <td>-0.2605703</td>
