@@ -125,11 +125,11 @@ Karol Langner's results
 <td>-0.0607</td>
 </tr>
 <tr>
-<td>Molpro 2012.1</td><td>30</td>
-<td>22</td><td>1.34</td>
-<td>-644.146626995532</td>
-<td>-0.257339</td>
-<td>0.07435040</td>
+<td>Molpro 2012.1</td><td>45</td>
+<td>23</td><td>1.93</td>
+<td>-648.495787701911</td>
+<td>-0.260808</td>
+<td>-0.064559</td>
 </tr>
 <tr>
 <td>NWChem 6.3 (2013-05-28)</td><td>42</td>
