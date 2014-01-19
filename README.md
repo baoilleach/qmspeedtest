@@ -5,6 +5,7 @@ Quantum Chemistry Speed Test
 
 Various people have submitted results:
 - [Eric Berquist](http://github.com/berky/qmspeedtest)
+- [Karol Langner] (http://github.com/langner/qmspeedtest)
 - [Michael Banck](http://github.com/mbanck/qmspeedtest)
 - [Noel O'Boyle](http://github.com/baoilleach/qmspeedtest)
 - [Pedro Silva](http://github.com/PedroJSilva/qmspeedtest)
