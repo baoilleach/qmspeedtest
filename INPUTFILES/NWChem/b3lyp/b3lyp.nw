@@ -38,6 +38,7 @@ end
 
 driver
   maxiter 40
+  inhess   1
 end
 
 task dft optimize
