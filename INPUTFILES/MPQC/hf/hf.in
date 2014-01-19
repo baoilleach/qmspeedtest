@@ -1,0 +1,71 @@
+molecule<Molecule>: (
+  symmetry = auto
+  unit = "angstrom"
+  { atoms                        geometry                     }={
+       C [    2.0563900000    -0.1654300000     0.3972700000]
+       C [    0.6889000000     2.0285400000    -0.6481600000]
+       C [    2.7407100000     1.0232700000     0.1253300000]
+       C [    2.0573400000     2.1178200000    -0.4001600000]
+       C [   -3.5939600000     1.0320900000     0.0458900000]
+       C [    0.6773800000    -0.2750700000     0.1509700000]
+       C [    0.0027400000     0.8423400000    -0.3588700000]
+       O [    0.6329300000    -2.5452600000     0.9336000000]
+       O [   -1.7645200000     1.4325200000     1.5657100000]
+       O [   -1.2489400000    -1.6841100000     0.1297500000]
+       C [    0.0527800000    -1.5888100000     0.4495800000]
+       C [   -2.1519900000     1.1284100000     0.4451300000]
+       O [   -1.3616700000     0.8283200000    -0.6582500000]
+       H [   -1.4765200000    -2.6011100000     0.3923200000]
+       H [    2.6094800000    -1.0117300000     0.8028400000]
+       H [    0.1570800000     2.8826600000    -1.0582300000]
+       H [    3.8077700000     1.0912600000     0.3236400000]
+       H [    2.5904400000     3.0408100000    -0.6140500000]
+       H [   -3.8164000000     0.0204900000    -0.3028700000]
+       H [   -4.2248000000     1.2459100000     0.9144000000]
+       H [   -3.8129600000     1.7657600000    -0.7333200000]
+  }
+)
+basis<GaussianBasisSet>: (
+  molecule = $:molecule
+  name = "6-31G"
+)
+mpqc: (
+  do_gradient = 0
+  optimize = 1
+  restart = 0
+  checkpoint = 0
+  savestate = 0
+  mole<CLHF>: (
+    total_charge = 0
+    multiplicity = 1
+    molecule = $:molecule
+    print_npa = 1
+    coor = $:mpqc:coor
+    basis = $:basis
+    guess_wavefunction<CLHF>: (
+      total_charge = 0
+      multiplicity = 1
+      molecule = $:molecule
+      basis<GaussianBasisSet>: (
+        molecule = $:molecule
+        name = "STO-3G"
+      )
+    )
+  )
+  coor<SymmMolecularCoor>: (
+    molecule = $:molecule
+    generator<IntCoorGen>: (
+      molecule = $:molecule
+    )
+  )
+  opt<QNewtonOpt>: (
+    function = $:mpqc:mole
+    update<BFGSUpdate>: ()
+    max_iterations = 120
+    convergence<MolEnergyConvergence>: (
+      cartesian = yes
+      energy = $:mpqc:mole
+    )
+  )
+)
+
