@@ -2,7 +2,7 @@
  $basis gbasis=n31 ngauss=6 
  $end 
  $SCF DIRSCF=.T. DAMP=.T. SHIFT=.T. ETHRSH=5  $END
- $contrl dfttyp=b3lyp $end
+ $contrl dfttyp=b3lyp1 $end
  $contrl   SCFTYP=RHF MAXIT=200 ICHARG=0 MULT=1
  RUNTYP=optimize nzvar=240   $END 
  $statpt   nstep=500   $end

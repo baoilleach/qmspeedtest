@@ -3,7 +3,7 @@
  $end 
  $SCF DIRSCF=.T. DAMP=.T. SHIFT=.T. ETHRSH=5  $END
  $p2p p2p=.t. dlb=.t. $end
- $contrl dfttyp=b3lyp
+ $contrl dfttyp=b3lyp1
  SCFTYP=RHF MAXIT=200 ICHARG=0 MULT=1
  RUNTYP=optimize nzvar=240   $END 
  $statpt  nstep=500 method=gdiis   $end
