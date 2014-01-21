@@ -22,18 +22,19 @@ Baoilleach's results
 ### HF
 <table>
 <tr>
-<th>QM Package</th><th>Time (min)</th><th>Steps</th><th>per step</th>
+<th>QM Package</th><th>Version</th>
+<th>Time (min)</th><th>Steps</th><th>per step</th>
 <th>Total E</th><th>HOMO</th><th>LUMO</th>
 </tr>
 <tr>
-<td>erkale r1013</td><td>810</td>
+<td>erkale</td><td>r1013</td><td>810</td>
 <td>90</td><td>9</td>
 <td>-644.67570139</td>
 <td>-0.353712</td>
 <td>0.074269</td>
 </tr>
 <tr>
-<td>NWChem 6.3</td><td>8.8</td>
+<td>NWChem</td><td>6.3</td><td>8.8</td>
 <td>20</td><td>0.4</td>
 <td>-644.67570661</td>
 <td>-0.353611</td>
@@ -44,18 +45,19 @@ Baoilleach's results
 ### B3LYP
 <table>
 <tr>
-<th>QM Package</th><th>Time (min)</th><th>Steps</th><th>per step</th>
+<th>QM Package</th><th>Version</th>
+<th>Time (min)</th><th>Steps</th><th>per step</th>
 <th>Total E</th><th>HOMO</th><th>LUMO</th>
 </tr>
 <tr>
-<td>erkale r1013</td><td>933</td>
+<td>erkale</td><td>r1013</td><td>933</td>
 <td>58</td><td>16.1</td>
 <td>-648.49566820</td>
 <td>-0.260899</td>
 <td>-0.064457</td>
 </tr>
 <tr>
-<td>NWChem 6.3</td><td>27.6</td>
+<td>NWChem</td><td>6.3</td><td>27.6</td>
 <td>27</td><td>1.0</td>
 <td>-648.495694167</td>
 <td>-0.260570</td>
@@ -73,7 +75,8 @@ MY NAME HERE's results
 ### HF
 <table>
 <tr>
-<th>QM Package</th><th>Time (min)</th><th>Steps</th><th>per step</th>
+<th>QM Package</th><th>Version</th>
+<th>Time (min)</th><th>Steps</th><th>per step</th>
 <th>Total E</th><th>HOMO</th><th>LUMO</th>
 </tr>
 <tr>
@@ -88,7 +91,8 @@ MY NAME HERE's results
 ### B3LYP
 <table>
 <tr>
-<th>QM Package</th><th>Time (min)</th><th>Steps</th><th>per step</th>
+<th>QM Package</th><th>Version</th>
+<th>Time (min)</th><th>Steps</th><th>per step</th>
 <th>Total E</th><th>HOMO</th><th>LUMO</th>
 </tr>
 <tr>
