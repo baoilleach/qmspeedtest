@@ -5,7 +5,7 @@ Quantum Chemistry Speed Test
 
 Various people have submitted results:
 - [Eric Berquist](http://github.com/berky/qmspeedtest)
-- [Karol Langner] (http://github.com/langner/qmspeedtest)
+- [Karol Langner](http://github.com/langner/qmspeedtest)
 - [Michael Banck](http://github.com/mbanck/qmspeedtest)
 - [Noel O'Boyle](http://github.com/baoilleach/qmspeedtest)
 - [Pedro Silva](http://github.com/PedroJSilva/qmspeedtest)
@@ -34,6 +34,13 @@ Baoilleach's results
 <td>0.074269</td>
 </tr>
 <tr>
+<td>Firefly</td><td>8.0.1</td><td>6.2</td>
+<td>24</td><td>0.3</td>
+<td>-644.67570480</td>
+<td>-0.3536</td>
+<td>0.0744</td>
+</tr>
+<tr>
 <td>NWChem</td><td>6.3</td><td>8.8</td>
 <td>20</td><td>0.4</td>
 <td>-644.67570661</td>
@@ -55,6 +62,13 @@ Baoilleach's results
 <td>-648.49566820</td>
 <td>-0.260899</td>
 <td>-0.064457</td>
+</tr>
+<tr>
+<td>Firefly</td><td>8.0.1</td><td>10.7</td>
+<td>26</td><td>0.4</td>
+<td>-648.49567865</td>
+<td>-0.2604</td>
+<td>-0.0642</td>
 </tr>
 <tr>
 <td>NWChem</td><td>6.3</td><td>27.6</td>
