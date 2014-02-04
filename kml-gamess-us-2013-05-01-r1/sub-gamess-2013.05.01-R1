@@ -1,0 +1,50 @@
+#!/bin/bash
+
+pwd | grep -q /lustre && echo 'Prosze wstawic zadanie z dysku home a nie lustre!' && exit 1
+
+export CURDIR=`pwd`
+
+export Q=$2
+export NNODES=1
+export PPN=1
+export MEM=2000
+export NCPUS=1
+export MPIPROCS=$(( 2 * $PPN ))
+
+if [ ! -f "$1" ] ; then
+	echo "Brak pliku $1"
+	exit 1
+fi
+
+export NAME="`basename $1 .inp`"
+
+if [ -f "$CURDIR/${NAME}.irc" ] ; then
+	echo "Prosze usunac lub przeniesc plik $CURDIR/${NAME}.irc"
+	exit 1
+fi
+
+if [ -f "$CURDIR/${NAME}.dat" ] ; then
+	echo "Prosze usunac lub przeniesc plik $CURDIR/${NAME}.dat"
+	exit 1
+fi
+
+if [ "$Q" = "bigmem" ]; then
+	echo Ta wersja GAMESS-a nie jest dostepne w kolejce bigmem.
+	exit 1
+fi
+
+cat <<EOF | qsub -r n
+#!/bin/bash
+#PBS -q $Q
+#PBS -l select=${NNODES}:ncpus=${PPN}:mpiprocs=${MPIPROCS}:mem=${MEM}MB:hw_model=2_Xeon_X5650_24GB
+#PBS -m be
+#PBS -N gms_${NAME:0:11}
+#PBS -l software=Gamess_2013.05.01-R1
+
+module load gamess/2013.05.01-R1
+
+cd $CURDIR
+/usr/local/gamess/2013.05.01-R1/rungms $1 00 $NCPUS >& ${CURDIR}/${NAME}.out
+
+/usr/local/bin/cleanipcs-safe >&/dev/null
+EOF

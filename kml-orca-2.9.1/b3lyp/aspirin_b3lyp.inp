@@ -1,0 +1,3 @@
+! rks b3lyp/g 6-31g opt
+
+* xyzfile 0 1 aspirin.xyz *
